@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/_footer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/wiki/bitcoin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/wiki/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/posts/nomining/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/donate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/posts/whatismining/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/posts/wheretostore/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dollarman.github.io/wiki/posts/wheretobuy/</loc>
+  </url>
+  
+</urlset>
