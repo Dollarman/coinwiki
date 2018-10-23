@@ -1,90 +1,90 @@
 [
 {
-	"uri": "https://dollarman.github.io/wiki/_footer/",
+	"uri": "https://dollarman.github.io/coinwiki/_footer/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://dollarman.github.io/wiki/",
+	"uri": "https://dollarman.github.io/coinwiki/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " Start Here If this is your first time learning about crypto, start by reading An Introduction to Cryptocurrency\nTechnical Discussions If you know the basics of crypto but are unclear of some details, head to our blog posts with explanations and discussions in long-form posts.\nCoin Wiki Our Coin Wiki section has detailed specs on each cryptocurrency (updated daily) that allow you to compare projects with ease.\n[Data, Graphs \u0026amp; Analysis of Recent Trends] Coming soon!\n"
 },
 {
-	"uri": "https://dollarman.github.io/wiki/intro/",
+	"uri": "https://dollarman.github.io/coinwiki/intro/",
 	"title": "An Introduction to Cryptocurrency",
 	"tags": [],
 	"description": "",
 	"content": " What is cryptocurrency? "
 },
 {
-	"uri": "https://dollarman.github.io/wiki/wiki/bitcoin/",
+	"uri": "https://dollarman.github.io/coinwiki/wiki/bitcoin/",
 	"title": "Bitcoin - BTC",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://dollarman.github.io/wiki/categories/",
+	"uri": "https://dollarman.github.io/coinwiki/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://dollarman.github.io/wiki/wiki/",
+	"uri": "https://dollarman.github.io/coinwiki/wiki/",
 	"title": "Coin Wiki",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://dollarman.github.io/wiki/posts/nomining/",
+	"uri": "https://dollarman.github.io/coinwiki/posts/nomining/",
 	"title": "Crypto without mining",
 	"tags": [],
 	"description": "",
 	"content": " Crypto projects without mining There are recent projects in crypto that seek instant transactions with no fees using a technology called DAG.\nNotable projects include IOTA, currently ranked #9 in marketcap across all projects and NANO ranked #30.\nThese projects do not \u0026ldquo;unlock\u0026rdquo; blocks using mining like most other projects, instead IOTA\u0026rsquo;s transactions require every new transaction to confirm 2 of the most recent transactions in a giant registry called the \u0026ldquo;Tangle\u0026rdquo;. Blockchains are linear structures that are built to mine a new block every X minutes as specified by the network, but DAG methods allow transactions to instantly enter into the global ledger automatically requiring new trasactions to confirm old ones. This approach for IOTA has proven difficult to implement although IOTA developers assure that network nodes become more efficient when there is more popularity and more transactions confirm old ones instantly.\nNANO has a simpler approach. Each receiving address in NANO has its own public blockchain where funds are stored and the network as a whole has a DAG that keeps track of all those blockchains. When someone wants to transfer funds, they have to mine a block in their own blockchain that marks a \u0026ldquo;send\u0026rdquo; function to the network and similarly mine a block on the receiver that marks a \u0026ldquo;receive\u0026rdquo; function to the network. The way it works so instantly is that each mined block contains the signature of both the sender and receiver, so confirmation is immediate and does not require anyone else in the network. The only\n"
 },
 {
-	"uri": "https://dollarman.github.io/wiki/posts/",
+	"uri": "https://dollarman.github.io/coinwiki/posts/",
 	"title": "Posts",
 	"tags": [],
 	"description": "",
 	"content": " Browse our posts to delve deeper on certain topics. "
 },
 {
-	"uri": "https://dollarman.github.io/wiki/donate/",
+	"uri": "https://dollarman.github.io/coinwiki/donate/",
 	"title": "Support this site",
 	"tags": [],
 	"description": "",
 	"content": "You can support development and upkeep of this site with:\nNANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman\n"
 },
 {
-	"uri": "https://dollarman.github.io/wiki/tags/",
+	"uri": "https://dollarman.github.io/coinwiki/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://dollarman.github.io/wiki/posts/whatismining/",
+	"uri": "https://dollarman.github.io/coinwiki/posts/whatismining/",
 	"title": "What is Mining?",
 	"tags": [],
 	"description": "",
 	"content": " What is Mining? Mining is the process of using vast computing power to unlock the next block in a blockchain and use that block to confirm pending transactions.\nMining is used as a way to achieve consensus in Proof of Work blockchains such as Bitcoin, Ethereum, Monero and most other cryptocurrencies. Consensus means that all the network can agree the mining was done correctly and the trasactions that the minier confirmed are real and stored in the blockchain forever. Mining is a definitive consensus method given that it relies on miners around the world competing for the right to unlock the next block once they discover its \u0026ldquo;password\u0026rdquo; using the previous block\u0026rsquo;s \u0026ldquo;password\u0026rdquo; which has to be distributed across the network.\nEvery blockchain project has a rule for how long each block should take to solve, and on each block mined, it automatically adjusts the difficulty of the next block to make sure the rate of blocks mined stays constant when more computers enter the network. This helps each blockchain give accurate estimates of how many blocks are mined in a year and control the rate of inflation/deflation of their currencies.\nWhile Proof of Work means using some form of mining, different blockchain projects employ different mining algorithms for their particular reasons. Bitcoin, the first blockchain project uses the SHA-256 algorithm for its mining, which is the same algorithm used worldwide to hash and keep passwords safe. At first when Bitcoin began, all mining was done using normal computers using their CPU and graphics capacity to mine blocks of Bitcoin. Later, in 2016 when Bitcoin adoption grew, certain companies discovered ways to create ASICs, which are machines whose sole purpose is to run the mining algorithm over 100x faster than any average computer. The way ASICs work is they are not computers, they are simple electrical devices that only do one thing. When they are turned on, the electrical components automatically run the mining algorithm and they communicate with a computer connected to the internet which mines the block and uploads it to the network. You can think of ASICs similar to a pair of headphones; headphones know how to produce sound when plugged in and given input, but it cannot produce sound by itself or perform any other functions.\nASICs however are powerful machines that consume lots of electricity and are one of the biggest criticisms of the Bitcoin network in particular. The Bitcoin network currently consumes an estimated XXX GW of electricity per day, which is more than the amount consumed in some countries. While some of this is probably produced with renewable energy, the high electricity cost coupled with slow transaction speeds and high trasaction fees have caused many projects to challenge Bitocoin\u0026rsquo;s place in the cryptocurrency world. But Bitcoin\u0026rsquo;s historic dominance is something that no other project is able to rival. Some projects have sprung that focus on computer-friendly algorithms which are labeled ASIC-resistant\n"
 },
 {
-	"uri": "https://dollarman.github.io/wiki/posts/wheretostore/",
+	"uri": "https://dollarman.github.io/coinwiki/posts/wheretostore/",
 	"title": "Where do you store cryptocurrency?",
 	"tags": [],
 	"description": "",
 	"content": " Where to store cryptocurrency Crypto is not stored anywhere as it is not data. It is simply a really long number that unlocks your money.\nYou start by generating an extremely long random number called a SEED. usually containing 64 digits mixed with the letters ABCDEF among the digits. This seed alone can unlock all your money no matter what app or website you used to \u0026ldquo;store\u0026rdquo; your cryptocurrency. A wallet is any app or website that takes a seed (or generates one for you) and creates another address known as your wallet address where you can receive funds for a particular currency.\nThe SEED is crucial to write down in paper on a secure place, away from your any electronic device. If your SEED is saved in a Word document or email, anyone can search your computer for long numbers and steal your funds just by entering your SEED on any wallet software.\nYou can also encrypt your SEED in a text file protected with a password. While this method still leaves the SEED in your computer, at least it can be protected by a strong password.\n"
 },
 {
-	"uri": "https://dollarman.github.io/wiki/posts/wheretobuy/",
+	"uri": "https://dollarman.github.io/coinwiki/posts/wheretobuy/",
 	"title": "Where to buy cryptocurrency?",
 	"tags": [],
 	"description": "",
