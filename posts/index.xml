@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dollarman</title>
-    <link>https://dollarman.com/posts/</link>
+    <link>https://github.com/Dollarman/coinwiki/posts/</link>
     <description>Recent content in Posts on Dollarman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://dollarman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://github.com/Dollarman/coinwiki/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Crypto without mining</title>
-      <link>https://dollarman.com/posts/nomining/</link>
+      <link>https://github.com/Dollarman/coinwiki/posts/nomining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dollarman.com/posts/nomining/</guid>
+      <guid>https://github.com/Dollarman/coinwiki/posts/nomining/</guid>
       <description>Crypto projects without mining There are recent projects in crypto that seek instant transactions with no fees using a technology called DAG.
 Notable projects include IOTA, currently ranked #9 in marketcap across all projects and NANO ranked #30.
 These projects do not &amp;ldquo;unlock&amp;rdquo; blocks using mining like most other projects, instead IOTA&amp;rsquo;s transactions require every new transaction to confirm 2 of the most recent transactions in a giant registry called the &amp;ldquo;Tangle&amp;rdquo;.</description>
@@ -23,39 +23,39 @@ These projects do not &amp;ldquo;unlock&amp;rdquo; blocks using mining like most
     
     <item>
       <title>List of Known Scams &amp; Malicious Apps</title>
-      <link>https://dollarman.com/posts/knownscams/</link>
+      <link>https://github.com/Dollarman/coinwiki/posts/knownscams/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dollarman.com/posts/knownscams/</guid>
+      <guid>https://github.com/Dollarman/coinwiki/posts/knownscams/</guid>
       <description> Bitcoin:  Twitter scams  NANO:  Bitgrail.com  </description>
     </item>
     
     <item>
       <title>What is Mining?</title>
-      <link>https://dollarman.com/posts/whatismining/</link>
+      <link>https://github.com/Dollarman/coinwiki/posts/whatismining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dollarman.com/posts/whatismining/</guid>
+      <guid>https://github.com/Dollarman/coinwiki/posts/whatismining/</guid>
       <description>What is Mining? Mining is the process of using vast computing power to unlock the next block in a blockchain and use that block to confirm pending transactions.
 Mining is used as a way to achieve consensus in Proof of Work blockchains such as Bitcoin, Ethereum, Monero and most other cryptocurrencies. Consensus means that all the network can agree the mining was done correctly and the trasactions that the minier confirmed are real and stored in the blockchain forever.</description>
     </item>
     
     <item>
       <title>Where do you store cryptocurrency?</title>
-      <link>https://dollarman.com/posts/wheretostore/</link>
+      <link>https://github.com/Dollarman/coinwiki/posts/wheretostore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dollarman.com/posts/wheretostore/</guid>
+      <guid>https://github.com/Dollarman/coinwiki/posts/wheretostore/</guid>
       <description>Where to store cryptocurrency Crypto is not stored anywhere as it is not data. It is simply a really long number that unlocks your money.
 You start by generating an extremely long random number called a SEED. usually containing 64 digits mixed with the letters ABCDEF among the digits. This seed alone can unlock all your money no matter what app or website you used to &amp;ldquo;store&amp;rdquo; your cryptocurrency. A wallet is any app or website that takes a seed (or generates one for you) and creates another address known as your wallet address where you can receive funds for a particular currency.</description>
     </item>
     
     <item>
       <title>Where to buy cryptocurrency?</title>
-      <link>https://dollarman.com/posts/wheretobuy/</link>
+      <link>https://github.com/Dollarman/coinwiki/posts/wheretobuy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dollarman.com/posts/wheretobuy/</guid>
+      <guid>https://github.com/Dollarman/coinwiki/posts/wheretobuy/</guid>
       <description>Where can I get coins? The easiest way to receive any kind of crypto is simply to ask someone you know to send you some.
 Cryptocurrency is &amp;ldquo;bought&amp;rdquo; in websites called exchanges where you exchange it for some of your regular bank currency such as USD. There are exchanges all over the world to cover each country and currency available.
 Other Places: Many crypto projects have websites called faucets that give away very small amounts of crypto for newcomers.</description>
