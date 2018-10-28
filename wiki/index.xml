@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coin Wiki on Dollarman</title>
-    <link>https://github.com/Dollarman/coinwiki/wiki/</link>
+    <link>/wiki/</link>
     <description>Recent content in Coin Wiki on Dollarman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://github.com/Dollarman/coinwiki/wiki/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/wiki/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bitcoin - BTC</title>
-      <link>https://github.com/Dollarman/coinwiki/wiki/bitcoin/</link>
+      <link>/wiki/bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/Dollarman/coinwiki/wiki/bitcoin/</guid>
+      <guid>/wiki/bitcoin/</guid>
       <description>About:  Official website: https://bitcoincore.org/ Released on: 9 January 2009 Created by: Satoshi Nakamoto Main purpose: Peer-to-Peer censorship-resistant currency. Managing Organization: Bitcoin Core Type of Organization: Open Source project where core developers are sponsored by big companies. Country of Origin: Unknown How much do developers own?: Satoshi may own up to 1 million BTC (5% of total supply), according to studies. Current developers are privately funded. Types of transactions: No.</description>
     </item>
     
     <item>
       <title>Ethereum - ETH</title>
-      <link>https://github.com/Dollarman/coinwiki/wiki/ethereum/</link>
+      <link>/wiki/ethereum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/Dollarman/coinwiki/wiki/ethereum/</guid>
+      <guid>/wiki/ethereum/</guid>
       <description>About:  Official website: https://ethereum.org/ Released on: 30 July 2015 Created by: Vitalik Buterin, Gavin Wood, Joseph Lubin Main purpose: Smart Contracts that use a decentralized cryptocurrency and allows programming by its users Country of Origin: Switzerland Managing Organization: Bitcoin Core Type of Organization: Open Source project How much did developers retain for themselves?: Whitepaper:  Tech Specs:  Type of network: Mainnet. Ethereum runs it own network and hosts &amp;ldquo;tokens&amp;rdquo; that also run their own blockchains on an Ethereum smart contract Types of transactions: Public Can it be mined?</description>
     </item>
     
     <item>
       <title>Litecoin - LTC</title>
-      <link>https://github.com/Dollarman/coinwiki/wiki/litecoin/</link>
+      <link>/wiki/litecoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/Dollarman/coinwiki/wiki/litecoin/</guid>
+      <guid>/wiki/litecoin/</guid>
       <description> About:  Official website: Released on: Created by: Main purpose: Managing Organization: Type of Organization: Country of Origin: How much do developers own?: Types of transactions: Initial Distribution Method(s): Type of network: Can it be mined?: Primary mining tool: Mining Algorithm: Transaction Speed (transactions per second): Average time to confirm transactions: Consensus protocol: Proof of Work Developer activity over last month: Whitepaper:  Online Community Ranking:  Github developer activity: Twitter activity: Reddit activity: Discord chat activity: BitcoinTalk forum activity: News mentions: Google Search Trends:  Distribution of coin supply:  ICO sale: Mining: Airdrop: Expected End Date:  Finance Data:  Total supply: 21,000,000 BTC Marketcap: Trade Volume: Trade Volume change over last day/month/year: Current Price ($USD): Price percent change in last 24hrs: Lowest price in past 30 days: Highest price in 30 days: Exchanges (where to buy):  General Questions:  How many addresses can I make with each seed: Are wallets / addresses reusable: How many seeds are possible: Does it have multisig wallets: Can I give the public address to everyone: Where can I just invest in it without worry: Which exchanges have this coin: Where can I use this coin to buy something: Is this coin legal: Known scam websites and malicious apps: Which one is the address I can share:  Official Social Media Links:  Twitter: Facebook: LinkedIN: Reddit: Discord: BitcoinTalk: Project Roadmap &amp;amp; Update History:  </description>
     </item>
     
     <item>
       <title>Monero - XMR</title>
-      <link>https://github.com/Dollarman/coinwiki/wiki/monero/</link>
+      <link>/wiki/monero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/Dollarman/coinwiki/wiki/monero/</guid>
+      <guid>/wiki/monero/</guid>
       <description> About:  Official website: Released on: Created by: Main purpose: Managing Organization: Type of Organization: Country of Origin: How much do developers own?: Types of transactions: Initial Distribution Method(s): Type of network: Can it be mined?: Primary mining tool: Mining Algorithm: Transaction Speed (transactions per second): Average time to confirm transactions: Consensus protocol: Proof of Work Developer activity over last month: Whitepaper:  Online Community Ranking:  Github developer activity: Twitter activity: Reddit activity: Discord chat activity: BitcoinTalk forum activity: News mentions: Google Search Trends:  Distribution of coin supply:  ICO sale: Mining: Airdrop: Expected End Date:  Finance Data:  Total supply: 21,000,000 BTC Marketcap: Trade Volume: Trade Volume change over last day/month/year: Current Price ($USD): Price percent change in last 24hrs: Lowest price in past 30 days: Highest price in 30 days: Exchanges (where to buy):  General Questions:  How many addresses can I make with each seed: Are wallets / addresses reusable: How many seeds are possible: Does it have multisig wallets: Can I give the public address to everyone: Where can I just invest in it without worry: Which exchanges have this coin: Where can I use this coin to buy something: Is this coin legal: Known scam websites and malicious apps: Which one is the address I can share:  Official Social Media Links:  Twitter: Facebook: LinkedIN: Reddit: Discord: BitcoinTalk: Project Roadmap &amp;amp; Update History:  </description>
     </item>
     
     <item>
       <title>Nano - NANO</title>
-      <link>https://github.com/Dollarman/coinwiki/wiki/nano/</link>
+      <link>/wiki/nano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/Dollarman/coinwiki/wiki/nano/</guid>
+      <guid>/wiki/nano/</guid>
       <description> About:  Official website: Released on: Created by: Main purpose: Managing Organization: Type of Organization: Country of Origin: How much do developers own?: Types of transactions: Initial Distribution Method(s): Type of network: Can it be mined?: Primary mining tool: Mining Algorithm: Transaction Speed (transactions per second): Average time to confirm transactions: Consensus protocol: Proof of Work Developer activity over last month: Whitepaper:  Online Community Ranking:  Github developer activity: Twitter activity: Reddit activity: Discord chat activity: BitcoinTalk forum activity: News mentions: Google Search Trends:  Distribution of coin supply:  ICO sale: Mining: Airdrop: Expected End Date:  Finance Data:  Total supply: 21,000,000 BTC Marketcap: Trade Volume: Trade Volume change over last day/month/year: Current Price ($USD): Price percent change in last 24hrs: Lowest price in past 30 days: Highest price in 30 days: Exchanges (where to buy):  General Questions:  How many addresses can I make with each seed: Are wallets / addresses reusable: How many seeds are possible: Does it have multisig wallets: Can I give the public address to everyone: Where can I just invest in it without worry: Which exchanges have this coin: Where can I use this coin to buy something: Is this coin legal: Known scam websites and malicious apps: Which one is the address I can share:  Official Social Media Links:  Twitter: Facebook: LinkedIN: Reddit: Discord: BitcoinTalk: Project Roadmap &amp;amp; Update History:  </description>
     </item>
     
     <item>
       <title>Ripple - XRP</title>
-      <link>https://github.com/Dollarman/coinwiki/wiki/ripple/</link>
+      <link>/wiki/ripple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/Dollarman/coinwiki/wiki/ripple/</guid>
+      <guid>/wiki/ripple/</guid>
       <description> About:  Official website: Released on: Created by: Main purpose: Managing Organization: Type of Organization: Country of Origin: How much do developers own?: Types of transactions: Initial Distribution Method(s): Type of network: Can it be mined?: Primary mining tool: Mining Algorithm: Transaction Speed (transactions per second): Average time to confirm transactions: Consensus protocol: Proof of Work Developer activity over last month: Whitepaper:  Online Community Ranking:  Github developer activity: Twitter activity: Reddit activity: Discord chat activity: BitcoinTalk forum activity: News mentions: Google Search Trends:  Distribution of coin supply:  ICO sale: Mining: Airdrop: Expected End Date:  Finance Data:  Total supply: 21,000,000 BTC Marketcap: Trade Volume: Trade Volume change over last day/month/year: Current Price ($USD): Price percent change in last 24hrs: Lowest price in past 30 days: Highest price in 30 days: Exchanges (where to buy):  General Questions:  How many addresses can I make with each seed: Are wallets / addresses reusable: How many seeds are possible: Does it have multisig wallets: Can I give the public address to everyone: Where can I just invest in it without worry: Which exchanges have this coin: Where can I use this coin to buy something: Is this coin legal: Known scam websites and malicious apps: Which one is the address I can share:  Official Social Media Links:  Twitter: Facebook: LinkedIN: Reddit: Discord: BitcoinTalk: Project Roadmap &amp;amp; Update History:  </description>
     </item>
     

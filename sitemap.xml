@@ -3,81 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/_footer/</loc>
+    <loc>/_footer/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/intro/</loc>
+    <loc>/intro/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/bitcoin/</loc>
+    <loc>/wiki/bitcoin/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/</loc>
+    <loc>/wiki/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/posts/nomining/</loc>
+    <loc>/posts/nomining/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/ethereum/</loc>
+    <loc>/wiki/ethereum/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/posts/knownscams/</loc>
+    <loc>/posts/knownscams/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/litecoin/</loc>
+    <loc>/wiki/litecoin/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/monero/</loc>
+    <loc>/wiki/monero/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/nano/</loc>
+    <loc>/wiki/nano/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/posts/</loc>
+    <loc>/posts/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/wiki/ripple/</loc>
+    <loc>/wiki/ripple/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/donate/</loc>
+    <loc>/donate/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/posts/whatismining/</loc>
+    <loc>/posts/whatismining/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/posts/wheretostore/</loc>
+    <loc>/posts/wheretostore/</loc>
   </url>
   
   <url>
-    <loc>https://github.com/Dollarman/coinwiki/posts/wheretobuy/</loc>
+    <loc>/posts/wheretobuy/</loc>
   </url>
   
 </urlset>
