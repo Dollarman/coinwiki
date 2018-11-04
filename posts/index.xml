@@ -31,6 +31,15 @@ These projects do not &amp;ldquo;unlock&amp;rdquo; blocks using mining like most
     </item>
     
     <item>
+      <title>Posts</title>
+      <link>/posts/myindex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/myindex/</guid>
+      <description> Browse our posts to delve deeper on certain topics. </description>
+    </item>
+    
+    <item>
       <title>What is Mining?</title>
       <link>/posts/whatismining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

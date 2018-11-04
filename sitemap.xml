@@ -53,6 +53,16 @@
   
   <url>
     <loc>/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/myindex/</loc>
   </url>
   
   <url>
@@ -61,11 +71,6 @@
   
   <url>
     <loc>/donate/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
