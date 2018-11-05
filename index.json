@@ -18,7 +18,7 @@
 	"title": "An Introduction to Cryptocurrency",
 	"tags": [],
 	"description": "",
-	"content": " What is cryptocurrency? "
+	"content": " What is cryptocurrency? A cryptocurrency is simply a digital currency that runs without the control of any central authority. In other words, cryptocurrencies have a system whereby they control themselves using cryptography to establish trust without intervention from its users.\nThe way most cryptocurrency works is using a large number (with hundreds of digits) called a SEED and running that number through one-way functions that maps that number to another unique number usually with less digit.\nExample: Think of a seed like the number 43. Now lets say our derived public number is 12. Lets assume our one-way function to derive the public number is multiplying each digit so 43 becomes 4*3 = 12. That means 12 is our public number we can give everyone. Now if we are someone else, you can give us your address (12) and we can send\nand makes it virtually impossible to figure out the original input.\n"
 },
 {
 	"uri": "/wiki/bitcoin/",
@@ -117,6 +117,13 @@
 	"tags": [],
 	"description": "",
 	"content": "You can support development and upkeep of this site with:\nNANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman\n"
+},
+{
+	"uri": "/posts/reusable-wallet/",
+	"title": "Unspent Transaction Outputs (UTXO)",
+	"tags": [],
+	"description": "",
+	"content": " Unspent Transaction Outputs (UTXO) Bitcoin originated a trasaction system called UTXO or Unspent Transaction Outputs, which reroutes unspent funds from a transaction into a new public address for you. This is because each public address has a private key derived from your seed that must be used to create a transaction. However, the way in which this private spend key is used, makes it easy for a computer to figure it out if used in several transactions. Therefore after sending one transaction from a certain public address, that address is considered unsafe for future use and a new one must be used to receive future funds.\nExample: You have 10 BTC and want to send 1 BTC to your friend. Your wallet application uses your seed to find a new public address and its private spend key. Then creates the transaction sending 1 BTC to your friend and 9 BTC to your new public address. Now, if you friend wants to send you BTC back, you must provide them your new public address.\nReusable Accounts Other cryptocurrencies use reusable accounts that make it simple to store a contact and send funds without having to change public addresses all the time. This makes it as simple to share public addresses as a phone number or email address.\n"
 },
 {
 	"uri": "/posts/whatismining/",

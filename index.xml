@@ -113,6 +113,15 @@ NANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman</descript
     </item>
     
     <item>
+      <title>Unspent Transaction Outputs (UTXO)</title>
+      <link>/posts/reusable-wallet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reusable-wallet/</guid>
+      <description>Unspent Transaction Outputs (UTXO) Bitcoin originated a trasaction system called UTXO or Unspent Transaction Outputs, which reroutes unspent funds from a transaction into a new public address for you. This is because each public address has a private key derived from your seed that must be used to create a transaction. However, the way in which this private spend key is used, makes it easy for a computer to figure it out if used in several transactions.</description>
+    </item>
+    
+    <item>
       <title>What is Mining?</title>
       <link>/posts/whatismining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
