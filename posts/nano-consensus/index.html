@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.49" />
-<title>Posts :: Dollarman</title>
+<title> :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/posts/">
+  <body data-url="/posts/nano-consensus/">
 
     <header>
   <div class="logo">
@@ -114,14 +114,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/posts/" class="dd-item parent active haschildren
+    <li data-nav-id="/posts/" class="dd-item parent haschildren
         ">
       <div>
       <a href="/posts/">Posts</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/posts/nano-consensus/" class="dd-item">
+      <li data-nav-id="/posts/nano-consensus/" class="dd-item active">
         <div>
           <a href="/posts/nano-consensus/">
             
@@ -197,9 +197,9 @@
    An Introduction to Cryptocurrency</option>
     <option value="/wiki/" >
    Coin Wiki</option>
-    <option value="/posts/"  selected>
+    <option value="/posts/" >
    Posts</option> 
-      <option value="/posts/nano-consensus/" >- </option>
+      <option value="/posts/nano-consensus/"  selected>- </option>
       <option value="/posts/nomining/" >- Crypto without mining</option>
       <option value="/posts/knownscams/" >- List of Known Scams &amp; Malicious Apps</option>
       <option value="/posts/myindex/" >- Posts</option>
@@ -231,27 +231,27 @@
 
 
     
-
-
-
-<ol  class="nav navbar-nav">
-
-  
     
-  
 
-  
+<h2 id="nano-s-innovative-transaction-and-voting-process">Nano&rsquo;s innovative transaction and voting process</h2>
 
+<p>Nano has 3 special protocols that make it different from other cryptocurrencies:
+1. Proof of Work is done by each account user to create send and receive blocks and confirm transactions, not by miners or nodes. The PoW difficulty is low enough for personal computers and smartphone to complete in seconds. But it can also be done by a server hosting your wallet without compromising security. There is current work on a Delegated POW system where anyone can set up a server to perform PoW for low-power devices such as &ldquo;dumb phones&rdquo; or IOT devices.</p>
+
+<ol>
+<li><p>After a sender creates a send block on his blockchain, she must broadcast this transaction block to the network so that nodes can verify the transaction and add the funds to the receiver&rsquo;s account. The next time the receiver logs on to their wallet, they will download the send block and must create a receive block on their chain to finalize the transaction. Funds don&rsquo;t have to be &ldquo;received&rdquo; in any amount of time to be valid, they can lay dormant for any amount of time as long as the send block was confirmed by the network.</p></li>
+
+<li><p>In the case a bad actor tries to create transactions with insufficient funds or otherwise make up a fake balance on their blockchain, nodes will notice when their invalid transaction is broadcasted and call a vote of representatives. Each online representative at that moment will have enough voting weight equal to the sum of the funds of the accounts that are using that representative.</p></li>
 </ol>
 
-
+<p>When every account is created, they choose a voting representative which is usually related to the wallet software, but can be changed at any time by creating a &ldquo;change&rdquo; block and broadcasting the change to the network. A voting rep is just another account on the network that will hopefully always be online to vote. If a voting rep goes offline, this does not affect the delegators in any way. It just means they will not participate in voting. To be clear, there is no current way for users to participate in voting themselves, this is stricly done by nodes to keep network honest.</p>
 
 
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/wiki/ripple/" title="Ripple - XRP"> <i class="fa fa-chevron-left"></i><label>Ripple - XRP</label></a>
-    <a class="nav nav-next" href="/posts/nano-consensus/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/posts/" title="Posts"> <i class="fa fa-chevron-left"></i><label>Posts</label></a>
+    <a class="nav nav-next" href="/posts/nomining/" title="Crypto without mining" style="margin-right: 0px;"><label>Crypto without mining</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -261,13 +261,25 @@
 
 <div class="footline">
     
+    <div class="tags">
+      
+        <a class="label label-default" href="/tags/nano">NANO</a>
+      
+        <a class="label label-default" href="/tags/consensus">consensus</a>
+      
+        <a class="label label-default" href="/tags/raiblocks">Raiblocks</a>
+      
+        <a class="label label-default" href="/tags/xrb">XRB</a>
+      
+    </div>
+    
 
     
 
   
 
     <div class="github-link">
-      <a href="" target="blank"><i class="fa fa-btc"></i>
+      <a href="posts/nano-consensus.md" target="blank"><i class="fa fa-btc"></i>
         Donate links</a>
     </div>
   </div>
