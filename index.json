@@ -21,6 +21,13 @@
 	"content": " Nano\u0026rsquo;s innovative transaction and voting process Nano has 3 special protocols that make it different from other cryptocurrencies: 1. Proof of Work is done by each account user to create send and receive blocks and confirm transactions, not by miners or nodes. The PoW difficulty is low enough for personal computers and smartphone to complete in seconds. But it can also be done by a server hosting your wallet without compromising security. There is current work on a Delegated POW system where anyone can set up a server to perform PoW for low-power devices such as \u0026ldquo;dumb phones\u0026rdquo; or IOT devices.\n After a sender creates a send block on his blockchain, she must broadcast this transaction block to the network so that nodes can verify the transaction and add the funds to the receiver\u0026rsquo;s account. The next time the receiver logs on to their wallet, they will download the send block and must create a receive block on their chain to finalize the transaction. Funds don\u0026rsquo;t have to be \u0026ldquo;received\u0026rdquo; in any amount of time to be valid, they can lay dormant for any amount of time as long as the send block was confirmed by the network.\n In the case a bad actor tries to create transactions with insufficient funds or otherwise make up a fake balance on their blockchain, nodes will notice when their invalid transaction is broadcasted and call a vote of representatives. Each online representative at that moment will have enough voting weight equal to the sum of the funds of the accounts that are using that representative.\n  When every account is created, they choose a voting representative which is usually related to the wallet software, but can be changed at any time by creating a \u0026ldquo;change\u0026rdquo; block and broadcasting the change to the network. A voting rep is just another account on the network that will hopefully always be online to vote. If a voting rep goes offline, this does not affect the delegators in any way. It just means they will not participate in voting. To be clear, there is no current way for users to participate in voting themselves, this is stricly done by nodes to keep network honest.\n"
 },
 {
+	"uri": "/wiki/eos/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/intro/",
 	"title": "An Introduction to Cryptocurrency",
 	"tags": [],
@@ -110,13 +117,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Browse our posts to delve deeper on certain topics. "
-},
-{
-	"uri": "/wiki/ripple/",
-	"title": "Ripple - XRP",
-	"tags": [],
-	"description": "",
-	"content": " About:  Official website: Released on: Created by: Main purpose: Managing Organization: Type of Organization: Country of Origin: How much do developers own?: Types of transactions: Initial Distribution Method(s): Type of network: Can it be mined?: Primary mining tool: Mining Algorithm: Transaction Speed (transactions per second): Average time to confirm transactions: Consensus protocol: Proof of Work Developer activity over last month: Whitepaper:  Online Community Ranking:  Github developer activity: Twitter activity: Reddit activity: Discord chat activity: BitcoinTalk forum activity: News mentions: Google Search Trends:  Distribution of coin supply:  ICO sale: Mining: Airdrop: Expected End Date:  Finance Data:  Total supply: 21,000,000 BTC Marketcap: Trade Volume: Trade Volume change over last day/month/year: Current Price ($USD): Price percent change in last 24hrs: Lowest price in past 30 days: Highest price in 30 days: Exchanges (where to buy):  General Questions:  How many addresses can I make with each seed: Are wallets / addresses reusable: How many seeds are possible: Does it have multisig wallets: Can I give the public address to everyone: Where can I just invest in it without worry: Which exchanges have this coin: Where can I use this coin to buy something: Is this coin legal: Known scam websites and malicious apps: Which one is the address I can share:  Official Social Media Links:  Twitter: Facebook: LinkedIN: Reddit: Discord: BitcoinTalk: Project Roadmap \u0026amp; Update History:  "
 },
 {
 	"uri": "/donate/",
