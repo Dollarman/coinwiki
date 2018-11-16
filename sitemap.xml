@@ -15,10 +15,6 @@
   </url>
   
   <url>
-    <loc>/wiki/eos/</loc>
-  </url>
-  
-  <url>
     <loc>/intro/</loc>
   </url>
   
@@ -29,10 +25,6 @@
   <url>
     <loc>/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/wiki/</loc>
   </url>
   
   <url>
@@ -91,6 +83,11 @@
   
   <url>
     <loc>/posts/wheretobuy/</loc>
+  </url>
+  
+  <url>
+    <loc>/wiki/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
