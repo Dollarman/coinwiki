@@ -1,0 +1,17 @@
+---
+draft: true
+---
+
+
+## [Start Here] ({{< ref "intro/" >}})
+If this is your first time learning about crypto, start by reading [An Introduction to Cryptocurrency] ({{< ref "intro/" >}})
+
+
+## [Technical Discussions] ({{<ref "posts/">}})
+If you know the basics of crypto but are unclear of some details, head to our [blog posts] ({{<ref "posts/">}}) with explanations and discussions in long-form posts.
+
+## [Coin Wiki] ({{<ref "wiki/">}})
+Our [Coin Wiki] ({{<ref "wiki/">}}) section has detailed specs on each cryptocurrency (updated daily) that allow you to compare projects with ease.
+
+## [Data, Graphs & Analysis of Recent Trends]
+Coming soon!

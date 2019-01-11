@@ -11,21 +11,14 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " Start Here If this is your first time learning about crypto, start by reading An Introduction to Cryptocurrency\nTechnical Discussions If you know the basics of crypto but are unclear of some details, head to our blog posts with explanations and discussions in long-form posts.\nCoin Wiki Our Coin Wiki section has detailed specs on each cryptocurrency (updated daily) that allow you to compare projects with ease.\n[Data, Graphs \u0026amp; Analysis of Recent Trends] Coming soon!\n"
+	"content": " Coin Wiki Our Coin Wiki section has detailed specs on each cryptocurrency (updated daily) that allow you to compare projects with ease.\nGraphs of Recent Trends Coming soon!\n"
 },
 {
-	"uri": "/posts/nano-consensus/",
+	"uri": "/posts/",
 	"title": "",
-	"tags": ["NANO", "consensus", "Raiblocks", "XRB"],
-	"description": "",
-	"content": " Nano\u0026rsquo;s innovative transaction and voting process Nano has 3 special protocols that make it different from other cryptocurrencies: 1. Proof of Work is done by each account user to create send and receive blocks and confirm transactions, not by miners or nodes. The PoW difficulty is low enough for personal computers and smartphone to complete in seconds. But it can also be done by a server hosting your wallet without compromising security. There is current work on a Delegated POW system where anyone can set up a server to perform PoW for low-power devices such as \u0026ldquo;dumb phones\u0026rdquo; or IOT devices.\n After a sender creates a send block on his blockchain, she must broadcast this transaction block to the network so that nodes can verify the transaction and add the funds to the receiver\u0026rsquo;s account. The next time the receiver logs on to their wallet, they will download the send block and must create a receive block on their chain to finalize the transaction. Funds don\u0026rsquo;t have to be \u0026ldquo;received\u0026rdquo; in any amount of time to be valid, they can lay dormant for any amount of time as long as the send block was confirmed by the network.\n In the case a bad actor tries to create transactions with insufficient funds or otherwise make up a fake balance on their blockchain, nodes will notice when their invalid transaction is broadcasted and call a vote of representatives. Each online representative at that moment will have enough voting weight equal to the sum of the funds of the accounts that are using that representative.\n  When every account is created, they choose a voting representative which is usually related to the wallet software, but can be changed at any time by creating a \u0026ldquo;change\u0026rdquo; block and broadcasting the change to the network. A voting rep is just another account on the network that will hopefully always be online to vote. If a voting rep goes offline, this does not affect the delegators in any way. It just means they will not participate in voting. To be clear, there is no current way for users to participate in voting themselves, this is stricly done by nodes to keep network honest.\n"
-},
-{
-	"uri": "/intro/",
-	"title": "An Introduction to Cryptocurrency",
 	"tags": [],
 	"description": "",
-	"content": " What is cryptocurrency? A cryptocurrency is simply a digital currency that runs without the control of any central authority. In other words, cryptocurrencies have a system whereby they control themselves using cryptography to establish trust without intervention from its users.\nThe way most cryptocurrency works is using a large number (with hundreds of digits) called a SEED and running that number through one-way functions that maps that number to another unique number usually with less digit.\nExample: Think of a seed like the number 43. Now lets say our derived public number is 12. Lets assume our one-way function to derive the public number is multiplying each digit so 43 becomes 4*3 = 12. That means 12 is our public number we can give everyone. Now if we are someone else, you can give us your address (12) and we can send\nand makes it virtually impossible to figure out the original input.\n"
+	"content": "INDEX CONTENT HERE\n"
 },
 {
 	"uri": "/wiki/bitcoin/",
@@ -42,11 +35,18 @@
 	"content": ""
 },
 {
-	"uri": "/posts/nomining/",
-	"title": "Crypto without mining",
+	"uri": "/graphs/cumulative-price-percents/",
+	"title": "Cumulative Price Percents",
 	"tags": [],
 	"description": "",
-	"content": " Crypto projects without mining There are recent projects in crypto that seek instant transactions with no fees using a technology called DAG.\nNotable projects include IOTA, currently ranked #9 in marketcap across all projects and NANO ranked #30.\nThese projects do not \u0026ldquo;unlock\u0026rdquo; blocks using mining like most other projects, instead IOTA\u0026rsquo;s transactions require every new transaction to confirm 2 of the most recent transactions in a giant registry called the \u0026ldquo;Tangle\u0026rdquo;. Blockchains are linear structures that are built to mine a new block every X minutes as specified by the network, but DAG methods allow transactions to instantly enter into the global ledger automatically requiring new trasactions to confirm old ones. This approach for IOTA has proven difficult to implement although IOTA developers assure that network nodes become more efficient when there is more popularity and more transactions confirm old ones instantly.\nNANO has a simpler approach. Each receiving address in NANO has its own public blockchain where funds are stored and the network as a whole has a DAG that keeps track of all those blockchains. When someone wants to transfer funds, they have to mine a block in their own blockchain that marks a \u0026ldquo;send\u0026rdquo; function to the network and similarly mine a block on the receiver that marks a \u0026ldquo;receive\u0026rdquo; function to the network. The way it works so instantly is that each mined block contains the signature of both the sender and receiver, so confirmation is immediate and does not require anyone else in the network. The only\n"
+	"content": ""
+},
+{
+	"uri": "/graphs/cumulative-volume-percents/",
+	"title": "Cumulative Volume Percents",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/wiki/ethereum/",
@@ -56,11 +56,11 @@
 	"content": ""
 },
 {
-	"uri": "/posts/knownscams/",
-	"title": "List of Known Scams &amp; Malicious Apps",
+	"uri": "/graphs/",
+	"title": "Graphs",
 	"tags": [],
 	"description": "",
-	"content": " Bitcoin:  Twitter scams  NANO:  Bitgrail.com  "
+	"content": ""
 },
 {
 	"uri": "/wiki/litecoin/",
@@ -84,25 +84,32 @@
 	"content": ""
 },
 {
-	"uri": "/posts/",
-	"title": "Posts",
+	"uri": "/graphs/correlation-percents/",
+	"title": "Price Percent vs Volume Percent",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/posts/",
-	"title": "Posts",
+	"uri": "/graphs/prices-percents/",
+	"title": "Price Percents",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/posts/myindex/",
-	"title": "Posts",
+	"uri": "/graphs/correlation-values/",
+	"title": "Price vs Volume",
 	"tags": [],
 	"description": "",
-	"content": " Browse our posts to delve deeper on certain topics. "
+	"content": ""
+},
+{
+	"uri": "/graphs/prices-pvp/",
+	"title": "Prices (pair vs pair)",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/wiki/ripple/",
@@ -119,32 +126,18 @@
 	"content": "You can support development and upkeep of this site with:\nNANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman\n"
 },
 {
-	"uri": "/posts/reusable-wallet/",
-	"title": "Unspent Transaction Outputs (UTXO)",
+	"uri": "/graphs/volumes-pvp/",
+	"title": "Volumes (pair vs pair)",
 	"tags": [],
 	"description": "",
-	"content": " Unspent Transaction Outputs (UTXO) Bitcoin originated a trasaction system called UTXO or Unspent Transaction Outputs, which reroutes unspent funds from a transaction into a new public address for you. This is because each public address has a private key derived from your seed that must be used to create a transaction. However, the way in which this private spend key is used, makes it easy for a computer to figure it out if used in several transactions. Therefore after sending one transaction from a certain public address, that address is considered unsafe for future use and a new one must be used to receive future funds.\nExample: You have 10 BTC and want to send 1 BTC to your friend. Your wallet application uses your seed to find a new public address and its private spend key. Then creates the transaction sending 1 BTC to your friend and 9 BTC to your new public address. Now, if you friend wants to send you BTC back, you must provide them your new public address.\nReusable Accounts Other cryptocurrencies use reusable accounts that make it simple to store a contact and send funds without having to change public addresses all the time. This makes it as simple to share public addresses as a phone number or email address.\n"
+	"content": ""
 },
 {
-	"uri": "/posts/whatismining/",
-	"title": "What is Mining?",
-	"tags": ["BTC", "Bitcoin"],
-	"description": "",
-	"content": " What is Mining? Mining is the process of using vast computing power to unlock the next block in a blockchain and use that block to confirm pending transactions.\nMining is used as a way to achieve consensus in Proof of Work blockchains such as Bitcoin, Ethereum, Monero and most other cryptocurrencies. Consensus means that all the network can agree the mining was done correctly and the trasactions that the minier confirmed are real and stored in the blockchain forever. Mining is a definitive consensus method given that it relies on miners around the world competing for the right to unlock the next block once they discover its \u0026ldquo;password\u0026rdquo; using the previous block\u0026rsquo;s \u0026ldquo;password\u0026rdquo; which has to be distributed across the network.\nEvery blockchain project has a rule for how long each block should take to solve, and on each block mined, it automatically adjusts the difficulty of the next block to make sure the rate of blocks mined stays constant when more computers enter the network. This helps each blockchain give accurate estimates of how many blocks are mined in a year and control the rate of inflation/deflation of their currencies.\nWhile Proof of Work means using some form of mining, different blockchain projects employ different mining algorithms for their particular reasons. Bitcoin, the first blockchain project uses the SHA-256 algorithm for its mining, which is the same algorithm used worldwide to hash and keep passwords safe. At first when Bitcoin began, all mining was done using normal computers using their CPU and graphics capacity to mine blocks of Bitcoin. Later, in 2016 when Bitcoin adoption grew, certain companies discovered ways to create ASICs, which are machines whose sole purpose is to run the mining algorithm over 100x faster than any average computer. The way ASICs work is they are not computers, they are simple electrical devices that only do one thing. When they are turned on, the electrical components automatically run the mining algorithm and they communicate with a computer connected to the internet which mines the block and uploads it to the network. You can think of ASICs similar to a pair of headphones; headphones know how to produce sound when plugged in and given input, but it cannot produce sound by itself or perform any other functions.\nASICs however are powerful machines that consume lots of electricity and are one of the biggest criticisms of the Bitcoin network in particular. The Bitcoin network currently consumes an estimated XXX GW of electricity per day, which is more than the amount consumed in some countries. While some of this is probably produced with renewable energy, the high electricity cost coupled with slow transaction speeds and high trasaction fees have caused many projects to challenge Bitocoin\u0026rsquo;s place in the cryptocurrency world. But Bitcoin\u0026rsquo;s historic dominance is something that no other project is able to rival. Some projects have sprung that focus on computer-friendly algorithms which are labeled ASIC-resistant\n"
-},
-{
-	"uri": "/posts/wheretostore/",
-	"title": "Where do you store cryptocurrency?",
+	"uri": "/graphs/volumes-percents/",
+	"title": "Volumes Percents",
 	"tags": [],
 	"description": "",
-	"content": " Where to store cryptocurrency Crypto is not stored anywhere as it is not data. It is simply a really long number that unlocks your money.\nYou start by generating an extremely long random number called a SEED. usually containing 64 digits mixed with the letters ABCDEF among the digits. This seed alone can unlock all your money no matter what app or website you used to \u0026ldquo;store\u0026rdquo; your cryptocurrency. A wallet is any app or website that takes a seed (or generates one for you) and creates another address known as your wallet address where you can receive funds for a particular currency.\nThe SEED is crucial to write down in paper on a secure place, away from your any electronic device. If your SEED is saved in a Word document or email, anyone can search your computer for long numbers and steal your funds just by entering your SEED on any wallet software.\nYou can also encrypt your SEED in a text file protected with a password. While this method still leaves the SEED in your computer, at least it can be protected by a strong password.\n"
-},
-{
-	"uri": "/posts/wheretobuy/",
-	"title": "Where to buy cryptocurrency?",
-	"tags": [],
-	"description": "",
-	"content": " Where can I get coins? The easiest way to receive any kind of crypto is simply to ask someone you know to send you some.\nCryptocurrency is \u0026ldquo;bought\u0026rdquo; in websites called exchanges where you exchange it for some of your regular bank currency such as USD. There are exchanges all over the world to cover each country and currency available.\nOther Places: Many crypto projects have websites called faucets that give away very small amounts of crypto for newcomers.\nIn online forums such as Discord, Reddit and Telegram, you can often find \u0026ldquo;tipbots\u0026rdquo; for some coins that allow you to receive a particular coin just by starting a conversation with the bot. Start by going to the coin\u0026rsquo;s homepage and look for links to Discord and Telegram. Many coins such as Banano, Dogecoin, Garlicoin, etc. have a culture of \u0026ldquo;tipping\u0026rdquo; new users using these bots for very small amounts similar to faucets.\n"
+	"content": ""
 },
 {
 	"uri": "/wiki/",

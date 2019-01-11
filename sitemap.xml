@@ -11,11 +11,7 @@
   </url>
   
   <url>
-    <loc>/posts/nano-consensus/</loc>
-  </url>
-  
-  <url>
-    <loc>/intro/</loc>
+    <loc>/posts/</loc>
   </url>
   
   <url>
@@ -28,7 +24,11 @@
   </url>
   
   <url>
-    <loc>/posts/nomining/</loc>
+    <loc>/graphs/cumulative-price-percents/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphs/cumulative-volume-percents/</loc>
   </url>
   
   <url>
@@ -36,7 +36,7 @@
   </url>
   
   <url>
-    <loc>/posts/knownscams/</loc>
+    <loc>/graphs/</loc>
   </url>
   
   <url>
@@ -52,17 +52,19 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <priority>0</priority>
+    <loc>/graphs/correlation-percents/</loc>
   </url>
   
   <url>
-    <loc>/categories/posts/</loc>
-    <priority>0</priority>
+    <loc>/graphs/prices-percents/</loc>
   </url>
   
   <url>
-    <loc>/posts/myindex/</loc>
+    <loc>/graphs/correlation-values/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphs/prices-pvp/</loc>
   </url>
   
   <url>
@@ -74,19 +76,11 @@
   </url>
   
   <url>
-    <loc>/posts/reusable-wallet/</loc>
+    <loc>/graphs/volumes-pvp/</loc>
   </url>
   
   <url>
-    <loc>/posts/whatismining/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/wheretostore/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/wheretobuy/</loc>
+    <loc>/graphs/volumes-percents/</loc>
   </url>
   
   <url>
