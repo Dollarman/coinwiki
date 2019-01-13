@@ -292,15 +292,16 @@
 
         <div class="w3-container" id='chartContainer'>
           
-          <input id="coin1" placeholder="Graph1" onchange="updateCoin1(this.value)" type="text" list="coins" style="background-color: inherit; width: 120px; display: inline-block;"/>
+          <input id="coin1" placeholder="Graph1" onchange="updateCoin1(this.value)" type="text" list="coins" style="left: 35%; background-color: inherit; width: 120px; display: inline-block;"/>
           <input id="coin2" placeholder="Graph2" onchange="updateCoin2(this.value)" type="text" list="coins" style="background-color: inherit; width: 120px; display: inline-block;"/>
 
           <datalist id="coins">
           </datalist>
 
-          <p class='bar-text' id='chart' style="width: 100%; height: 720px;" >
+          <p class='bar-text' id='chart' style="width: 92%; height: 720px;" >
           </p>
           
+
         </div>
         <script type="text/javascript">
         
@@ -354,7 +355,9 @@
             document.getElementById("coins").innerHTML = chartStr;
             
             name1 = labels[Math.floor(Math.random()*labels.length)];
+            $("#coin1").value = name1;
             name2 = labels[Math.floor(Math.random()*labels.length)];
+            $("#coin2").value = name2;
             
             values = [];
             
@@ -365,7 +368,10 @@
             
             DG = new Dygraph(document.getElementById(chartID),
                         values,
-                        {"labels": ["timestamp", name1, name2]
+                        {"labels": ["timestamp", name1, name2],
+                         "labelsSeparateLines": true,
+                         "hideOverlayOnMouseOut": false,
+                         "legend": "always"
                         }
             );
           
