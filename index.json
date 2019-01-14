@@ -14,13 +14,6 @@
 	"content": " Coin Wiki Our Coin Wiki section has detailed specs on each cryptocurrency (updated daily) that allow you to compare projects with ease.\nGraphs of Recent Trends We have graphs from the past 7 days with hourly data for:\n Percent changes Cumulative change Correlations between price/volume Correlations among pairs of coins per category Soon: Frequency analysis of pump/dump graphs, and more!  This website has several goals:  To provide a source of information free of news, active development or speculation. We inform what is available and usable right now. The core of this site is to contruct a wiki based on objective data with sources and provide open source data analysis from common exchanges. Looking forward to add more exchanges for graph data, and add more coins to the mix. In the spirit of keeping the site objective, I\u0026rsquo;ll keep my own articles section away from the main navigation, but may be reached here  "
 },
 {
-	"uri": "/posts/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "INDEX CONTENT HERE\n"
-},
-{
 	"uri": "/wiki/bitcoin/",
 	"title": "Bitcoin - BTC",
 	"tags": ["BTC", "Bitcoin"],
