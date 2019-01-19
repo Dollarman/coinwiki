@@ -48,11 +48,15 @@
   </url>
   
   <url>
-    <loc>/graphs/correlation-percents/</loc>
+    <loc>/graphs/correlation-price-percents-pvp/</loc>
   </url>
   
   <url>
     <loc>/graphs/prices-percents/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphs/correlation-percents/</loc>
   </url>
   
   <url>
@@ -72,11 +76,11 @@
   </url>
   
   <url>
-    <loc>/graphs/volumes-pvp/</loc>
+    <loc>/graphs/volumes-percents/</loc>
   </url>
   
   <url>
-    <loc>/graphs/volumes-percents/</loc>
+    <loc>/graphs/volumes-pvp/</loc>
   </url>
   
   <url>

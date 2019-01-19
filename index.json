@@ -32,14 +32,14 @@
 	"title": "Cumulative Price Percents",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.\n"
 },
 {
 	"uri": "/graphs/cumulative-volume-percents/",
 	"title": "Cumulative Volume Percents",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.\n"
 },
 {
 	"uri": "/wiki/ethereum/",
@@ -77,32 +77,39 @@
 	"content": ""
 },
 {
-	"uri": "/graphs/correlation-percents/",
-	"title": "Price Percent vs Volume Percent",
+	"uri": "/graphs/correlation-price-percents-pvp/",
+	"title": "Price Percent (pair vs pair)",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "/graphs/prices-percents/",
-	"title": "Price Percents",
+	"title": "Price Percent Changes",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Measures the hourly percent changes in price for 2 given pairs.\n"
+},
+{
+	"uri": "/graphs/correlation-percents/",
+	"title": "Price Percent vs Volume Percent",
+	"tags": [],
+	"description": "",
+	"content": "Shows the correlation between Price Percent Change and Volume Percent Change of each pair.\n"
 },
 {
 	"uri": "/graphs/correlation-values/",
 	"title": "Price vs Volume",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Shows the correlation between Price and Volume (the actual values) for each pair.\n"
 },
 {
 	"uri": "/graphs/prices-pvp/",
 	"title": "Prices (pair vs pair)",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Each bar represents the correlation in prices between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in price. A strong negative correlation implies as one pair is being \u0026ldquo;pumped\u0026rdquo; the other is \u0026ldquo;dumped\u0026rdquo; in price.\n"
 },
 {
 	"uri": "/wiki/ripple/",
@@ -119,18 +126,18 @@
 	"content": "You can support development and upkeep of this site with:\nNANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman\n"
 },
 {
+	"uri": "/graphs/volumes-percents/",
+	"title": "Volume Percent Changes",
+	"tags": [],
+	"description": "",
+	"content": "Measures the hourly percent changes in volume for 2 given pairs.\n"
+},
+{
 	"uri": "/graphs/volumes-pvp/",
 	"title": "Volumes (pair vs pair)",
 	"tags": [],
 	"description": "",
-	"content": ""
-},
-{
-	"uri": "/graphs/volumes-percents/",
-	"title": "Volumes Percents",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": "Each bar represents the correlation in volume between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in volume. A strong negative correlation implies as one pair is being \u0026ldquo;pumped\u0026rdquo; the other is \u0026ldquo;dumped\u0026rdquo; in volume.\n"
 },
 {
 	"uri": "/wiki/",

@@ -69,6 +69,9 @@
         opacity: .6;
         transition-duration: 1.5s;
     }
+    summary:hover {
+      cursor: pointer;
+    }
     </style>
     
     
@@ -79,8 +82,6 @@
 
   </head>
   <body data-url="/graphs/volumes-pvp/">
-
-
 
      <header>
   <div class="logo">
@@ -135,17 +136,24 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/correlation-percents/" class="dd-item">
+      <li data-nav-id="/graphs/correlation-price-percents-pvp/" class="dd-item">
         <div>
-          <a href="/graphs/correlation-percents/">
-            Price Percent vs Volume Percent
+          <a href="/graphs/correlation-price-percents-pvp/">
+            Price Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/graphs/prices-percents/" class="dd-item">
         <div>
           <a href="/graphs/prices-percents/">
-            Price Percents
+            Price Percent Changes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/correlation-percents/" class="dd-item">
+        <div>
+          <a href="/graphs/correlation-percents/">
+            Price Percent vs Volume Percent
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -163,17 +171,17 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
+        <div>
+          <a href="/graphs/volumes-percents/">
+            Volume Percent Changes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/graphs/volumes-pvp/" class="dd-item active">
         <div>
           <a href="/graphs/volumes-pvp/">
             Volumes (pair vs pair)
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/volumes-percents/">
-            Volumes Percents
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -247,12 +255,13 @@
    Graphs</option> 
       <option value="/graphs/cumulative-price-percents/" >- Cumulative Price Percents</option>
       <option value="/graphs/cumulative-volume-percents/" >- Cumulative Volume Percents</option>
+      <option value="/graphs/correlation-price-percents-pvp/" >- Price Percent (pair vs pair)</option>
+      <option value="/graphs/prices-percents/" >- Price Percent Changes</option>
       <option value="/graphs/correlation-percents/" >- Price Percent vs Volume Percent</option>
-      <option value="/graphs/prices-percents/" >- Price Percents</option>
       <option value="/graphs/correlation-values/" >- Price vs Volume</option>
       <option value="/graphs/prices-pvp/" >- Prices (pair vs pair)</option>
+      <option value="/graphs/volumes-percents/" >- Volume Percent Changes</option>
       <option value="/graphs/volumes-pvp/"  selected>- Volumes (pair vs pair)</option>
-      <option value="/graphs/volumes-percents/" >- Volumes Percents</option>
   
     <option value="/wiki/" >
    Wikis</option>
@@ -281,10 +290,24 @@
     <h1>Volumes (pair vs pair)</h1>
 
     
+    <p>Each bar represents the correlation in volume between 2 pairs.
+A strong positive correlation indicates that both pairs rise together and fall together in volume.
+A strong negative correlation implies as one pair is being &ldquo;pumped&rdquo; the other is &ldquo;dumped&rdquo; in volume.</p>
 
-        <div class="w3-container" id='chartContainer'>
+
+    
+    <p> Data is taken from the last <span id="numDays"></span> days starting on <span id="startDate"></span> and ending on <span id="endDate"></span>. </p>
+
+    <details>
+      <summary style="onh"> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the list by clicking here: &#9660; </summary>
+      <br>
+      <p style="overflow-wrap: break-word;" id="excludedPairs"> </p>
+    </details>
+    <br>
+    
+    <div class="w3-container" id='chartContainer'>
           
-            <p class='bar-text' id='chart' style="width: 50%; height: 720px;" >
+            <p class='bar-text' id='chart' style="width: 50%; " >
               Strong Positive Correlations
             </p>
 
@@ -311,9 +334,6 @@
         var dict;
         var chartStr = '';
 
-        function hbar(dict, id) {
-
-        }
 
         function updateDG() {
           values = [];
@@ -328,7 +348,14 @@
 
           startDate = d['startDate'];
           endDate = d['endDate'];
+          excludedPairs = d['excludedPairs'];
+          numDays = d['numDays'];
           dict = d['data'];
+
+          document.getElementById("startDate").innerHTML = startDate;
+          document.getElementById("endDate").innerHTML = endDate;
+          document.getElementById("excludedPairs").innerHTML = excludedPairs;
+          document.getElementById("numDays").innerHTML = numDays;
 
           labels = Object.keys(dict);
           values = Object.values(dict);
@@ -349,15 +376,12 @@
 
         
         </script>
-    
-
-  
 
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/graphs/prices-pvp/" title="Prices (pair vs pair)"> <i class="fa fa-chevron-left"></i><label>Prices (pair vs pair)</label></a>
-    <a class="nav nav-next" href="/graphs/volumes-percents/" title="Volumes Percents" style="margin-right: 0px;"><label>Volumes Percents</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/graphs/volumes-percents/" title="Volume Percent Changes"> <i class="fa fa-chevron-left"></i><label>Volume Percent Changes</label></a>
+    <a class="nav nav-next" href="/wiki/" title="Wikis" style="margin-right: 0px;"><label>Wikis</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

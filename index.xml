@@ -34,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/cumulative-price-percents/</guid>
-      <description></description>
+      <description>The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/cumulative-volume-percents/</guid>
-      <description></description>
+      <description>The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.</description>
     </item>
     
     <item>
@@ -83,21 +83,30 @@
     </item>
     
     <item>
+      <title>Price Percent (pair vs pair)</title>
+      <link>/graphs/correlation-price-percents-pvp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphs/correlation-price-percents-pvp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Price Percent Changes</title>
+      <link>/graphs/prices-percents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphs/prices-percents/</guid>
+      <description>Measures the hourly percent changes in price for 2 given pairs.</description>
+    </item>
+    
+    <item>
       <title>Price Percent vs Volume Percent</title>
       <link>/graphs/correlation-percents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/correlation-percents/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Price Percents</title>
-      <link>/graphs/prices-percents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/graphs/prices-percents/</guid>
-      <description></description>
+      <description>Shows the correlation between Price Percent Change and Volume Percent Change of each pair.</description>
     </item>
     
     <item>
@@ -106,7 +115,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/correlation-values/</guid>
-      <description></description>
+      <description>Shows the correlation between Price and Volume (the actual values) for each pair.</description>
     </item>
     
     <item>
@@ -115,7 +124,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/prices-pvp/</guid>
-      <description></description>
+      <description>Each bar represents the correlation in prices between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in price. A strong negative correlation implies as one pair is being &amp;ldquo;pumped&amp;rdquo; the other is &amp;ldquo;dumped&amp;rdquo; in price.</description>
     </item>
     
     <item>
@@ -138,21 +147,21 @@ NANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman</descript
     </item>
     
     <item>
+      <title>Volume Percent Changes</title>
+      <link>/graphs/volumes-percents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphs/volumes-percents/</guid>
+      <description>Measures the hourly percent changes in volume for 2 given pairs.</description>
+    </item>
+    
+    <item>
       <title>Volumes (pair vs pair)</title>
       <link>/graphs/volumes-pvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/volumes-pvp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Volumes Percents</title>
-      <link>/graphs/volumes-percents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/graphs/volumes-percents/</guid>
-      <description></description>
+      <description>Each bar represents the correlation in volume between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in volume. A strong negative correlation implies as one pair is being &amp;ldquo;pumped&amp;rdquo; the other is &amp;ldquo;dumped&amp;rdquo; in volume.</description>
     </item>
     
   </channel>

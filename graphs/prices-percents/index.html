@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.53" />
-<title>Price Percents :: Dollarman</title>
+<title>Price Percent Changes :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -69,6 +69,9 @@
         opacity: .6;
         transition-duration: 1.5s;
     }
+    summary:hover {
+      cursor: pointer;
+    }
     </style>
     
     
@@ -79,8 +82,6 @@
 
   </head>
   <body data-url="/graphs/prices-percents/">
-
-
 
      <header>
   <div class="logo">
@@ -135,17 +136,24 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/correlation-percents/" class="dd-item">
+      <li data-nav-id="/graphs/correlation-price-percents-pvp/" class="dd-item">
         <div>
-          <a href="/graphs/correlation-percents/">
-            Price Percent vs Volume Percent
+          <a href="/graphs/correlation-price-percents-pvp/">
+            Price Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/graphs/prices-percents/" class="dd-item active">
         <div>
           <a href="/graphs/prices-percents/">
-            Price Percents
+            Price Percent Changes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/correlation-percents/" class="dd-item">
+        <div>
+          <a href="/graphs/correlation-percents/">
+            Price Percent vs Volume Percent
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -163,17 +171,17 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
+        <div>
+          <a href="/graphs/volumes-percents/">
+            Volume Percent Changes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/graphs/volumes-pvp/" class="dd-item">
         <div>
           <a href="/graphs/volumes-pvp/">
             Volumes (pair vs pair)
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/volumes-percents/">
-            Volumes Percents
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -247,12 +255,13 @@
    Graphs</option> 
       <option value="/graphs/cumulative-price-percents/" >- Cumulative Price Percents</option>
       <option value="/graphs/cumulative-volume-percents/" >- Cumulative Volume Percents</option>
+      <option value="/graphs/correlation-price-percents-pvp/" >- Price Percent (pair vs pair)</option>
+      <option value="/graphs/prices-percents/"  selected>- Price Percent Changes</option>
       <option value="/graphs/correlation-percents/" >- Price Percent vs Volume Percent</option>
-      <option value="/graphs/prices-percents/"  selected>- Price Percents</option>
       <option value="/graphs/correlation-values/" >- Price vs Volume</option>
       <option value="/graphs/prices-pvp/" >- Prices (pair vs pair)</option>
+      <option value="/graphs/volumes-percents/" >- Volume Percent Changes</option>
       <option value="/graphs/volumes-pvp/" >- Volumes (pair vs pair)</option>
-      <option value="/graphs/volumes-percents/" >- Volumes Percents</option>
   
     <option value="/wiki/" >
    Wikis</option>
@@ -278,11 +287,23 @@
       </div>
 
 
-    <h1>Price Percents</h1>
+    <h1>Price Percent Changes</h1>
 
     
+    <p>Measures the hourly percent changes in price for 2 given pairs.</p>
 
-        <div class="w3-container" id='chartContainer'>
+
+    
+    <p> Data is taken from the last <span id="numDays"></span> days starting on <span id="startDate"></span> and ending on <span id="endDate"></span>. </p>
+
+    <details>
+      <summary style="onh"> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the list by clicking here: &#9660; </summary>
+      <br>
+      <p style="overflow-wrap: break-word;" id="excludedPairs"> </p>
+    </details>
+    <br>
+    
+    <div class="w3-container" id='chartContainer'>
           
           <input id="coin1" placeholder="Graph1" onchange="updateCoin1(this.value)" type="text" list="coins" style="left: 35%; background-color: inherit; width: 120px; display: inline-block;"/>
           <input id="coin2" placeholder="Graph2" onchange="updateCoin2(this.value)" type="text" list="coins" style="background-color: inherit; width: 120px; display: inline-block;"/>
@@ -315,9 +336,6 @@
         var dict;
         var chartStr = '';
 
-        function hbar(dict, id) {
-
-        }
 
         function updateDG() {
           values = [];
@@ -332,7 +350,14 @@
 
           startDate = d['startDate'];
           endDate = d['endDate'];
+          excludedPairs = d['excludedPairs'];
+          numDays = d['numDays'];
           dict = d['data'];
+
+          document.getElementById("startDate").innerHTML = startDate;
+          document.getElementById("endDate").innerHTML = endDate;
+          document.getElementById("excludedPairs").innerHTML = excludedPairs;
+          document.getElementById("numDays").innerHTML = numDays;
 
           labels = Object.keys(dict);
           values = Object.values(dict);
@@ -373,15 +398,12 @@
 
         
         </script>
-    
-
-  
 
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/graphs/correlation-percents/" title="Price Percent vs Volume Percent"> <i class="fa fa-chevron-left"></i><label>Price Percent vs Volume Percent</label></a>
-    <a class="nav nav-next" href="/graphs/correlation-values/" title="Price vs Volume" style="margin-right: 0px;"><label>Price vs Volume</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/graphs/correlation-price-percents-pvp/" title="Price Percent (pair vs pair)"> <i class="fa fa-chevron-left"></i><label>Price Percent (pair vs pair)</label></a>
+    <a class="nav nav-next" href="/graphs/correlation-percents/" title="Price Percent vs Volume Percent" style="margin-right: 0px;"><label>Price Percent vs Volume Percent</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
