@@ -58,8 +58,8 @@
                 </a>
             </li>
             <li class="" role="">
-                <a href="/posts"  rel="noopener">
-                  <i class='fas fa-fw fa-file-invoice-dollar'></i> <label> Articles </label>
+                <a href="/graphs"  rel="noopener">
+                  <i class='fas fa-fw fa-chart-line'></i> <label style=''> Graphs </label>
                 </a>
             </li>
     </nav>
@@ -243,9 +243,100 @@
         <script type="text/javascript" src="/js/search.js"></script>
       </div>
 
+   
+   <h2> Search any 2 pairs and view all kinds of graphs below:</h2>
+
+   
+   <p> Data is taken from the last <span id="numDays"></span> days starting on <span id="startDate"></span> and ending on <span id="endDate"></span>. </p>
+
+   <details>
+     <summary> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the list by clicking here: &#9660; </summary>
+     <br>
+     <p style="overflow-wrap: break-word;" id="excludedPairs"> </p>
+   </details>
+   <br>
+
+  
+  <h3> Cumulative Price Percent </h3>
+
 
    <script type="text/javascript">
-     $.getJSON('/json/latestCorr.json', function (data) { var lastestCorr = data; });
+   
+   function updateCoin1(val){
+     name1 = val;
+     updateDG();
+   }
+   
+   function updateCoin2(val) {
+     name2 = val;
+     updateDG();
+   }
+
+   var chartID = "chart";
+   var name1;
+   var name2;
+   var labels;
+   var values;
+   var dict;
+   var chartStr = '';
+   var files = [ ['cumula'] ];
+
+   function updateDG() {
+     values = [];
+     
+     for (var time in dict[name1]) {
+       values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
+     }
+     DG.updateOptions( {'file': values, "labels": ["timestamp", name1, name2] } );
+   } 
+
+
+   $.getJSON(  null  , function (d) {
+
+     startDate = d['startDate'];
+     endDate = d['endDate'];
+     excludedPairs = d['excludedPairs'];
+     numDays = d['numDays'];
+
+     dict = d['data'];
+
+     document.getElementById("startDate").innerHTML = startDate;
+     document.getElementById("endDate").innerHTML = endDate;
+     document.getElementById("excludedPairs").innerHTML = excludedPairs;
+     document.getElementById("numDays").innerHTML = numDays;
+
+     labels = Object.keys(dict);
+     values = Object.values(dict);
+
+
+       
+       for (var label of labels) {
+         chartStr += "<option>" + label + "</option>";
+       }
+       document.getElementById("coins").innerHTML = chartStr;
+       
+       name1 = labels[Math.floor(Math.random()*labels.length)];
+       $("#coin1").value = name1;
+       name2 = labels[Math.floor(Math.random()*labels.length)];
+       $("#coin2").value = name2;
+       
+       values = [];
+       
+       for (var time in dict[name1]) {
+         values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
+       }
+
+       
+       DG = new Dygraph(document.getElementById(chartID),
+                   values,
+                   {"labels": ["timestamp", name1, name2],
+                    "labelsSeparateLines": true,
+                    "hideOverlayOnMouseOut": false,
+                    "legend": "always"
+                   }
+       );
+
+   });
 
    </script>
 
