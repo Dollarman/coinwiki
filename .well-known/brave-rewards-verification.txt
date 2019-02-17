@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dollarman.com
+Token: a04008eeff4c3afd5a7737bea251cadd141eaafc9510f1f8f9875afef7fe661a
