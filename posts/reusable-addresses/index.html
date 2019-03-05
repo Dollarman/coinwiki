@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>Dollarman</title>
-    <meta charset="utf-8">
+
+      <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.54.0" />
-<title>Volume Percent Changes :: Dollarman</title>
+<title> :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -22,68 +23,11 @@
 
 
 
-    <style>
-    li {margin-top: 15px;}
-    span {
-      font-family: consolas;
-      color: red;
-    }
-     
-    .tooltip::after {
-      content: attr(data-tip) ;
-
-       
-      position:absolute;
-      z-index: 999;
-       
-       
-       
-       
-       
-      background: red;
-      color: white;
-      padding:0px 7px;
-       
-       
-       
-      opacity: 0;
-      transition:opacity 0.4s ease-out;
-    }
-
-    .tooltip:hover::after {
-      opacity: 1;
-       
-    }
-
-     
-    .bar-text{margin-bottom: 10px}
-    .w3-container{padding:0.01em 16px}
-    .w3-container:after,.w3-container:before{content:""; display:table; clear:both}
-     
-     
-    .skillbar{background-color: #009688!important; height:18px!important; color: white; text-align: center}
-    .skillbar-container{background-color:#f1f1f1!important;}
-    .skillbar, .skillbar-container{border-radius:7px; font-size:100% !important;}
-     
-    .skillbar-container:hover {
-        opacity: .6;
-        transition-duration: 1.5s;
-    }
-    summary:hover {
-      cursor: pointer;
-    }
-    </style>
     
-    
-
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.js"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.css" />
-
   </head>
-  <body data-url="/graphs/volumes-percents/">
+  <body data-url="/posts/reusable-addresses/">
 
-     <header>
+    <header>
   <div class="logo">
     
 	
@@ -129,11 +73,10 @@
               <i class="fa fa-fw fa-home"></i> Homepage
             </a>
           </li>
-    <li data-nav-id="/graphs/" class="dd-item parent haschildren
+    <li data-nav-id="/graphs/" class="dd-item haschildren
         ">
       <div>
-      <a href="/graphs/">Graphs</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/graphs/">Graphs</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/graphs/correlation-price-percents-pvp/" class="dd-item">
@@ -185,7 +128,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/volumes-percents/" class="dd-item active">
+      <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
         <div>
           <a href="/graphs/volumes-percents/">
             Volume Percent Changes
@@ -194,13 +137,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/posts/" class="dd-item haschildren
+    <li data-nav-id="/posts/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/posts/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/posts/">Posts</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/posts/reusable-addresses/" class="dd-item">
+      <li data-nav-id="/posts/reusable-addresses/" class="dd-item active">
         <div>
           <a href="/posts/reusable-addresses/">
             
@@ -274,18 +218,11 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/graphs/" >
-   Graphs</option> 
-      <option value="/graphs/correlation-price-percents-pvp/" >- Price Percent (pair vs pair)</option>
-      <option value="/graphs/prices-percents/" >- Price Percent Changes</option>
-      <option value="/graphs/correlation-percents/" >- Price Percent vs Volume Percent</option>
-      <option value="/graphs/correlation-values/" >- Price vs Volume</option>
-      <option value="/graphs/cumulative-price-percents/" >- Total Price Percent Change</option>
-      <option value="/graphs/cumulative-volume-percents/" >- Total Volume Percent Change</option>
-      <option value="/graphs/correlation-volume-percent-pvp/" >- Volume Percent (pair vs pair)</option>
-      <option value="/graphs/volumes-percents/"  selected>- Volume Percent Changes</option>
-  
+   Graphs</option>
     <option value="/posts/" >
-   Posts</option>
+   Posts</option> 
+      <option value="/posts/reusable-addresses/"  selected>- </option>
+  
     <option value="/wiki/" >
    Wikis</option>
 
@@ -298,126 +235,25 @@
 
 
 
-    <h1>Volume Percent Changes</h1>
-
     
-    <p>Measures the hourly percent changes in volume for 2 given pairs.</p>
+    <p>#Address Re-use in different cryptocurrencies</p>
 
+<p>Bitcoin originated a method of conducting transactions called Unspent Transaction Outputs or UTXO. This means whenever you want to spend funds from your Bitcoin wallet app, your app will send the remainder balance to a new public address generated for you by the wallet app. This makes UTXO-type cryptocurrencies require you to generate and physically give out a new public address every time you want to accept funds from someone.</p>
 
-    
-    <p> Data is taken from the last <span id="numDays"></span> days starting on <span id="startDate"></span> and ending on <span id="endDate"></span>. </p>
+<p>In short, this is how it works: Your account has X BTC (100 BTC for this example). You want to send Y BTC (1 BTC for this example) to your friend who wants to try BTC for the first time. You open your wallet app and enter your friend&rsquo;s public address, enter 1 BTC as the amount and click send. Automatically, your wallet sends 1 BTC to your friend and calculates 100 - 1 = 99 BTC, it generates a new public address for you and sends 99 (minus the transaction fees involved) to that that new generated address. Finally, your friend receives 1 BTC, and you are left with around a little below 99 BTC in the new generated account after you pay transaction fees.</p>
 
-    <details>
-      <summary style="onh"> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the list by clicking here: &#9660; </summary>
-      <br>
-      <p style="overflow-wrap: break-word; " id="excludedPairs"> </p>
-    </details>
-    <br>
-    
-    <div class="w3-container" id='chartContainer'>
-          
-          <input id="coin1" placeholder="Graph1" onchange="updateCoin1(this.value)" type="text" list="coins" style="left: 35%; background-color: inherit; width: 120px; display: inline-block;"/>
-          <input id="coin2" placeholder="Graph2" onchange="updateCoin2(this.value)" type="text" list="coins" style="background-color: inherit; width: 120px; display: inline-block;"/>
+<p>At first glance, it looks overkill, why go through all that trouble instead of keeping the same public address. However, Bitcoin developers decided this procedure helps the network maintain some semblance of privacy by using one-time accounts for everything and design the wallet apps to work around this to keep casual everyday payments from revealing all the funds you have available and give slight obfuscation to the source of those funds. This behavior is designed into wallets but technically speaking, you could force your way around that manually as there is no restriction in the Bitcoin nor UTXO protocol to restrict the number of transactions an account can send. *</p>
 
-          
-          <datalist id="coins">
-          </datalist>
+<p>Other cryptocurrencies such as Ethereum and Nano have reusable addresses as a core feature. With their wallets, you are free to create as many public addresses as you want, but by default, transactions will reuse the same account. This makes sharing public addresses as easy as sharing a phone number and removes the need to ask a recipient for their current address on every payment.</p>
 
-          <p class='bar-text' id='chart' style="width: 92%; height: 720px;" >
-          </p>
-          
+<p>*IOTA uses a Quantum-resistant type of encryption for its transactions that reveals part of the private key in each send transaction. This forces users to change public addresses on each send, or risk having your funds compromised. Similar security risks were noted in this forum</p>
 
-        </div>
-
-        
-        <script type="text/javascript">
-        
-        function updateCoin1(val){
-          name1 = val;
-          updateDG();
-        }
-        
-        function updateCoin2(val) {
-          name2 = val;
-          updateDG();
-        }
-
-        var chartID = "chart";
-        var name1;
-        var name2;
-        var labels;
-        var values;
-        var dict;
-        var chartStr = '';
-
-
-        function updateDG() {
-          values = [];
-          
-          for (var time in dict[name1]) {
-            values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
-          }
-          DG.updateOptions( {'file': values, "labels": ["timestamp", name1, name2] } );
-        } 
-
-        $.getJSON( "/json/hourly-volume-percent.json" , function (d) {
-
-          startDate = d['startDate'];
-          endDate = d['endDate'];
-          excludedPairs = d['excludedPairs'];
-          numDays = d['numDays'];
-          dict = d['data'];
-
-          document.getElementById("startDate").innerHTML = startDate;
-          document.getElementById("endDate").innerHTML = endDate;
-          document.getElementById("excludedPairs").innerHTML = excludedPairs;
-          document.getElementById("numDays").innerHTML = numDays;
-
-          labels = Object.keys(dict);
-          values = Object.values(dict);
-
-          
-
-          
-            
-            for (var label of labels) {
-              chartStr += "<option>" + label + "</option>";
-            }
-            document.getElementById("coins").innerHTML = chartStr;
-            
-            name1 = labels[Math.floor(Math.random()*labels.length)];
-            $("#coin1").value = name1;
-            name2 = labels[Math.floor(Math.random()*labels.length)];
-            $("#coin2").value = name2;
-            
-            values = [];
-            
-            for (var time in dict[name1]) {
-              values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
-            }
-
-            
-            DG = new Dygraph(document.getElementById(chartID),
-                        values,
-                        {"labels": ["timestamp", name1, name2],
-                         "labelsSeparateLines": true,
-                         "hideOverlayOnMouseOut": false,
-                         "legend": "always"
-                        }
-            );
-          
-        });
-
-
-
-        
-        </script>
 
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/graphs/correlation-volume-percent-pvp/" title="Volume Percent (pair vs pair)"> <i class="fa fa-chevron-left"></i><label>Volume Percent (pair vs pair)</label></a>
-    <a class="nav nav-next" href="/posts/" title="Posts" style="margin-right: 0px;"><label>Posts</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/posts/" title="Posts"> <i class="fa fa-chevron-left"></i><label>Posts</label></a>
+    <a class="nav nav-next" href="/wiki/" title="Wikis" style="margin-right: 0px;"><label>Wikis</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -433,7 +269,7 @@
   
 
     <div class="github-link">
-      <a href="graphs/volumes-percents.md" target="blank"><i class="fa fa-btc"></i>
+      <a href="posts/reusable-addresses.md" target="blank"><i class="fa fa-btc"></i>
         Donate links</a>
     </div>
   </div>

@@ -20,30 +20,22 @@
     </item>
     
     <item>
+      <title></title>
+      <link>/posts/reusable-addresses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reusable-addresses/</guid>
+      <description>#Address Re-use in different cryptocurrencies
+Bitcoin originated a method of conducting transactions called Unspent Transaction Outputs or UTXO. This means whenever you want to spend funds from your Bitcoin wallet app, your app will send the remainder balance to a new public address generated for you by the wallet app. This makes UTXO-type cryptocurrencies require you to generate and physically give out a new public address every time you want to accept funds from someone.</description>
+    </item>
+    
+    <item>
       <title>Bitcoin - BTC</title>
       <link>/wiki/bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/wiki/bitcoin/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Cumulative Price Percents</title>
-      <link>/graphs/cumulative-price-percents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/graphs/cumulative-price-percents/</guid>
-      <description>The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.</description>
-    </item>
-    
-    <item>
-      <title>Cumulative Volume Percents</title>
-      <link>/graphs/cumulative-volume-percents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/graphs/cumulative-volume-percents/</guid>
-      <description>The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.</description>
     </item>
     
     <item>
@@ -119,15 +111,6 @@
     </item>
     
     <item>
-      <title>Prices (pair vs pair)</title>
-      <link>/graphs/prices-pvp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/graphs/prices-pvp/</guid>
-      <description>Each bar represents the correlation in prices between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in price. A strong negative correlation implies as one pair is being &amp;ldquo;pumped&amp;rdquo; the other is &amp;ldquo;dumped&amp;rdquo; in price.</description>
-    </item>
-    
-    <item>
       <title>Ripple - XRP</title>
       <link>/wiki/ripple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -147,21 +130,39 @@ NANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman</descript
     </item>
     
     <item>
+      <title>Total Price Percent Change</title>
+      <link>/graphs/cumulative-price-percents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphs/cumulative-price-percents/</guid>
+      <description>The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.</description>
+    </item>
+    
+    <item>
+      <title>Total Volume Percent Change</title>
+      <link>/graphs/cumulative-volume-percents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphs/cumulative-volume-percents/</guid>
+      <description>The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.</description>
+    </item>
+    
+    <item>
+      <title>Volume Percent (pair vs pair)</title>
+      <link>/graphs/correlation-volume-percent-pvp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graphs/correlation-volume-percent-pvp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Volume Percent Changes</title>
       <link>/graphs/volumes-percents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/graphs/volumes-percents/</guid>
       <description>Measures the hourly percent changes in volume for 2 given pairs.</description>
-    </item>
-    
-    <item>
-      <title>Volumes (pair vs pair)</title>
-      <link>/graphs/volumes-pvp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/graphs/volumes-pvp/</guid>
-      <description>Each bar represents the correlation in volume between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in volume. A strong negative correlation implies as one pair is being &amp;ldquo;pumped&amp;rdquo; the other is &amp;ldquo;dumped&amp;rdquo; in volume.</description>
     </item>
     
   </channel>

@@ -4,7 +4,7 @@
     <title>Dollarman</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.53" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>Price Percent (pair vs pair) :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
@@ -94,6 +94,20 @@
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <div>
+      <div class="searchbox">
+        <input data-search-input id="search-by" type="text" placeholder="Search...">
+      </div>
+      <script type="text/javascript" src="/js/lunr.min.js"></script>
+      <script type="text/javascript" src="/js/auto-complete.js"></script>
+      <link href="/css/auto-complete.css" rel="stylesheet">
+      <script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+      </script>
+      <script type="text/javascript" src="/js/search.js"></script>
+    </div>
     <nav class="shortcuts">
             <li class="" role="">
                 <a href="/wiki"  rel="noopener">
@@ -122,20 +136,6 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/graphs/cumulative-price-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/cumulative-price-percents/">
-            Cumulative Price Percents
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/graphs/cumulative-volume-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/cumulative-volume-percents/">
-            Cumulative Volume Percents
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/graphs/correlation-price-percents-pvp/" class="dd-item active">
         <div>
           <a href="/graphs/correlation-price-percents-pvp/">
@@ -164,10 +164,24 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/prices-pvp/" class="dd-item">
+      <li data-nav-id="/graphs/cumulative-price-percents/" class="dd-item">
         <div>
-          <a href="/graphs/prices-pvp/">
-            Prices (pair vs pair)
+          <a href="/graphs/cumulative-price-percents/">
+            Total Price Percent Change
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/cumulative-volume-percents/" class="dd-item">
+        <div>
+          <a href="/graphs/cumulative-volume-percents/">
+            Total Volume Percent Change
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/correlation-volume-percent-pvp/" class="dd-item">
+        <div>
+          <a href="/graphs/correlation-volume-percent-pvp/">
+            Volume Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -178,10 +192,18 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/volumes-pvp/" class="dd-item">
+        </ul>
+    </li>
+    <li data-nav-id="/posts/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/posts/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/posts/reusable-addresses/" class="dd-item">
         <div>
-          <a href="/graphs/volumes-pvp/">
-            Volumes (pair vs pair)
+          <a href="/posts/reusable-addresses/">
+            
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -253,16 +275,17 @@
           
     <option value="/graphs/" >
    Graphs</option> 
-      <option value="/graphs/cumulative-price-percents/" >- Cumulative Price Percents</option>
-      <option value="/graphs/cumulative-volume-percents/" >- Cumulative Volume Percents</option>
       <option value="/graphs/correlation-price-percents-pvp/"  selected>- Price Percent (pair vs pair)</option>
       <option value="/graphs/prices-percents/" >- Price Percent Changes</option>
       <option value="/graphs/correlation-percents/" >- Price Percent vs Volume Percent</option>
       <option value="/graphs/correlation-values/" >- Price vs Volume</option>
-      <option value="/graphs/prices-pvp/" >- Prices (pair vs pair)</option>
+      <option value="/graphs/cumulative-price-percents/" >- Total Price Percent Change</option>
+      <option value="/graphs/cumulative-volume-percents/" >- Total Volume Percent Change</option>
+      <option value="/graphs/correlation-volume-percent-pvp/" >- Volume Percent (pair vs pair)</option>
       <option value="/graphs/volumes-percents/" >- Volume Percent Changes</option>
-      <option value="/graphs/volumes-pvp/" >- Volumes (pair vs pair)</option>
   
+    <option value="/posts/" >
+   Posts</option>
     <option value="/wiki/" >
    Wikis</option>
 
@@ -271,20 +294,8 @@
         </select>
       </center>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
-        </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+
+
 
 
     <h1>Price Percent (pair vs pair)</h1>
@@ -298,7 +309,7 @@
     <details>
       <summary style="onh"> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the list by clicking here: &#9660; </summary>
       <br>
-      <p style="overflow-wrap: break-word;" id="excludedPairs"> </p>
+      <p style="overflow-wrap: break-word; " id="excludedPairs"> </p>
     </details>
     <br>
     
@@ -311,6 +322,8 @@
           
 
         </div>
+
+        
         <script type="text/javascript">
         
         function updateCoin1(val){
@@ -377,7 +390,7 @@
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/graphs/cumulative-volume-percents/" title="Cumulative Volume Percents"> <i class="fa fa-chevron-left"></i><label>Cumulative Volume Percents</label></a>
+<a class="nav nav-prev" href="/graphs/" title="Graphs"> <i class="fa fa-chevron-left"></i><label>Graphs</label></a>
     <a class="nav nav-next" href="/graphs/prices-percents/" title="Price Percent Changes" style="margin-right: 0px;"><label>Price Percent Changes</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 

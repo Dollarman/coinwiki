@@ -5,8 +5,8 @@
 
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.53" />
-<title> :: Dollarman</title>
+<meta name="generator" content="Hugo 0.54.0" />
+<title>Posts :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -38,6 +38,20 @@
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <div>
+      <div class="searchbox">
+        <input data-search-input id="search-by" type="text" placeholder="Search...">
+      </div>
+      <script type="text/javascript" src="/js/lunr.min.js"></script>
+      <script type="text/javascript" src="/js/auto-complete.js"></script>
+      <link href="/css/auto-complete.css" rel="stylesheet">
+      <script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+      </script>
+      <script type="text/javascript" src="/js/search.js"></script>
+    </div>
     <nav class="shortcuts">
             <li class="" role="">
                 <a href="/wiki"  rel="noopener">
@@ -45,8 +59,8 @@
                 </a>
             </li>
             <li class="" role="">
-                <a href="/posts"  rel="noopener">
-                  <i class='fas fa-fw fa-file-invoice-dollar'></i> <label> Articles </label>
+                <a href="/graphs"  rel="noopener">
+                  <i class='fas fa-fw fa-chart-line'></i> <label style=''> Graphs </label>
                 </a>
             </li>
     </nav>
@@ -59,29 +73,23 @@
               <i class="fa fa-fw fa-home"></i> Homepage
             </a>
           </li>
-    <li data-nav-id="/posts/" class="dd-item parent active
-        ">
-      <div>
-      <a href="/posts/"></a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
     <li data-nav-id="/graphs/" class="dd-item haschildren
         ">
       <div>
       <a href="/graphs/">Graphs</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/graphs/cumulative-price-percents/" class="dd-item">
+      <li data-nav-id="/graphs/correlation-price-percents-pvp/" class="dd-item">
         <div>
-          <a href="/graphs/cumulative-price-percents/">
-            Cumulative Price Percents
+          <a href="/graphs/correlation-price-percents-pvp/">
+            Price Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/cumulative-volume-percents/" class="dd-item">
+      <li data-nav-id="/graphs/prices-percents/" class="dd-item">
         <div>
-          <a href="/graphs/cumulative-volume-percents/">
-            Cumulative Volume Percents
+          <a href="/graphs/prices-percents/">
+            Price Percent Changes
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -92,13 +100,6 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/prices-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/prices-percents/">
-            Price Percents
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/graphs/correlation-values/" class="dd-item">
         <div>
           <a href="/graphs/correlation-values/">
@@ -106,24 +107,47 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/prices-pvp/" class="dd-item">
+      <li data-nav-id="/graphs/cumulative-price-percents/" class="dd-item">
         <div>
-          <a href="/graphs/prices-pvp/">
-            Prices (pair vs pair)
+          <a href="/graphs/cumulative-price-percents/">
+            Total Price Percent Change
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/volumes-pvp/" class="dd-item">
+      <li data-nav-id="/graphs/cumulative-volume-percents/" class="dd-item">
         <div>
-          <a href="/graphs/volumes-pvp/">
-            Volumes (pair vs pair)
+          <a href="/graphs/cumulative-volume-percents/">
+            Total Volume Percent Change
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/correlation-volume-percent-pvp/" class="dd-item">
+        <div>
+          <a href="/graphs/correlation-volume-percent-pvp/">
+            Volume Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
       <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
         <div>
           <a href="/graphs/volumes-percents/">
-            Volumes Percents
+            Volume Percent Changes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/posts/" class="dd-item parent active haschildren
+        ">
+      <div>
+      <a href="/posts/">Posts</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/posts/reusable-addresses/" class="dd-item">
+        <div>
+          <a href="/posts/reusable-addresses/">
+            
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -193,11 +217,12 @@
       <center>Navigation :
         <select onchange="javascript:location.href = this.value;">
           
-    <option value="/posts/"  selected>
-   </option> 
-  
     <option value="/graphs/" >
    Graphs</option>
+    <option value="/posts/"  selected>
+   Posts</option> 
+      <option value="/posts/reusable-addresses/" >- </option>
+  
     <option value="/wiki/" >
    Wikis</option>
 
@@ -206,20 +231,8 @@
         </select>
       </center>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
-        </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+
+
 
 
     
@@ -242,8 +255,8 @@
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
-    <a class="nav nav-next" href="/graphs/" title="Graphs" style="margin-right: 0px;"><label>Graphs</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/graphs/volumes-percents/" title="Volume Percent Changes"> <i class="fa fa-chevron-left"></i><label>Volume Percent Changes</label></a>
+    <a class="nav nav-next" href="/posts/reusable-addresses/" title="" style="margin-right: 0px;"><label></label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -259,7 +272,7 @@
   
 
     <div class="github-link">
-      <a href="posts/_index.md" target="blank"><i class="fa fa-btc"></i>
+      <a href="" target="blank"><i class="fa fa-btc"></i>
         Donate links</a>
     </div>
   </div>

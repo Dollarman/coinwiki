@@ -4,7 +4,7 @@
     <title>Dollarman</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.53" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>Graphs :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
@@ -35,8 +35,35 @@
       margin-bottom: 15px;
     }
 
-    </style>
+    .button {
+      border-radius: 15px;
+      border-style: solid;
+      border-color: grey;
+      text-align: center;
+      width: 100px;
+      height: 50px;
+      margin: 5px;
+      align-items: center;
+      display: inline-grid;
+    }
+    .button:hover {
+      cursor: pointer;
+      
+    }
+    .button::selection {
+      background-color: aquamarine;
+    }
+    input[type="checkbox"], input[type="radio"] {
+      display: none;
+    }
+    input:checked + label {
+      background-color: aquamarine;
+    }
 
+    </style>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.css" />
   </head>
   <body data-url="/graphs/">
 
@@ -51,6 +78,20 @@
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <div>
+      <div class="searchbox">
+        <input data-search-input id="search-by" type="text" placeholder="Search...">
+      </div>
+      <script type="text/javascript" src="/js/lunr.min.js"></script>
+      <script type="text/javascript" src="/js/auto-complete.js"></script>
+      <link href="/css/auto-complete.css" rel="stylesheet">
+      <script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+      </script>
+      <script type="text/javascript" src="/js/search.js"></script>
+    </div>
     <nav class="shortcuts">
             <li class="" role="">
                 <a href="/wiki"  rel="noopener">
@@ -79,20 +120,6 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/graphs/cumulative-price-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/cumulative-price-percents/">
-            Cumulative Price Percents
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/graphs/cumulative-volume-percents/" class="dd-item">
-        <div>
-          <a href="/graphs/cumulative-volume-percents/">
-            Cumulative Volume Percents
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/graphs/correlation-price-percents-pvp/" class="dd-item">
         <div>
           <a href="/graphs/correlation-price-percents-pvp/">
@@ -121,10 +148,24 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/prices-pvp/" class="dd-item">
+      <li data-nav-id="/graphs/cumulative-price-percents/" class="dd-item">
         <div>
-          <a href="/graphs/prices-pvp/">
-            Prices (pair vs pair)
+          <a href="/graphs/cumulative-price-percents/">
+            Total Price Percent Change
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/cumulative-volume-percents/" class="dd-item">
+        <div>
+          <a href="/graphs/cumulative-volume-percents/">
+            Total Volume Percent Change
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/graphs/correlation-volume-percent-pvp/" class="dd-item">
+        <div>
+          <a href="/graphs/correlation-volume-percent-pvp/">
+            Volume Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -135,10 +176,18 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/volumes-pvp/" class="dd-item">
+        </ul>
+    </li>
+    <li data-nav-id="/posts/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/posts/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/posts/reusable-addresses/" class="dd-item">
         <div>
-          <a href="/graphs/volumes-pvp/">
-            Volumes (pair vs pair)
+          <a href="/posts/reusable-addresses/">
+            
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -210,16 +259,17 @@
           
     <option value="/graphs/"  selected>
    Graphs</option> 
-      <option value="/graphs/cumulative-price-percents/" >- Cumulative Price Percents</option>
-      <option value="/graphs/cumulative-volume-percents/" >- Cumulative Volume Percents</option>
       <option value="/graphs/correlation-price-percents-pvp/" >- Price Percent (pair vs pair)</option>
       <option value="/graphs/prices-percents/" >- Price Percent Changes</option>
       <option value="/graphs/correlation-percents/" >- Price Percent vs Volume Percent</option>
       <option value="/graphs/correlation-values/" >- Price vs Volume</option>
-      <option value="/graphs/prices-pvp/" >- Prices (pair vs pair)</option>
+      <option value="/graphs/cumulative-price-percents/" >- Total Price Percent Change</option>
+      <option value="/graphs/cumulative-volume-percents/" >- Total Volume Percent Change</option>
+      <option value="/graphs/correlation-volume-percent-pvp/" >- Volume Percent (pair vs pair)</option>
       <option value="/graphs/volumes-percents/" >- Volume Percent Changes</option>
-      <option value="/graphs/volumes-pvp/" >- Volumes (pair vs pair)</option>
   
+    <option value="/posts/" >
+   Posts</option>
     <option value="/wiki/" >
    Wikis</option>
 
@@ -228,37 +278,48 @@
         </select>
       </center>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
-        </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+
+
 
    
+   
+   <div class="button-holder">
+    <h2> Choose a statistic to plot: </h2>
+        <input id="price-choice" type="radio" class="button" onclick="change_feature(this.value)" checked="checked" value="price" name="pv"> 
+        <label for="price-choice" class="button"> Price </label>
+
+        <input id="volume-choice" type="radio" class="button" onclick="change_feature(this.value)" value="volume" name="pv">
+        <label for="volume-choice" class="button"> Volume </label>
+      </div>
+   
+   <div class="button-holder">
+    <h3> Choose between Hourly Percent Change or the Cumulative Change </h3>
+    <input id="hourly-choice" type="radio" class="button" onclick="change_type(this.value)" checked="checked" value="hourly" name="ht">
+    <label for="hourly-choice" class="button"> Hourly Change </label>
+    
+    <input id="cumulative-choice" type="radio" class="button" onclick="change_type(this.value)" checked="checked" value="cumulative" name="ht">
+    <label for="cumulative-choice" class="button"> Total Change </label>
+   </div>
+
+
    <h2> Search any 2 pairs and view all kinds of graphs below:</h2>
+    <input id="coin1" placeholder="Graph1" onchange="updateCoin1(this.value)" type="text" list="coins"
+      style="left: 35%; background-color: inherit; width: 120px; display: inline-block;" />
+    <input id="coin2" placeholder="Graph2" onchange="updateCoin2(this.value)" type="text" list="coins"
+      style="background-color: inherit; width: 120px; display: inline-block;" />
+    
+    
+    <datalist id="coins">
+    </datalist>
+
 
    
    <p> Data is taken from the last <span id="numDays"></span> days starting on <span id="startDate"></span> and ending on <span id="endDate"></span>. </p>
 
-   <details>
-     <summary> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the list by clicking here: &#9660; </summary>
-     <br>
-     <p style="overflow-wrap: break-word;" id="excludedPairs"> </p>
-   </details>
+
    <br>
-
-  
-  <h3> Cumulative Price Percent </h3>
-
+    <p class='bar-text' id='chart' style="width: 92%; height: 720px;">
+    </p>
 
    <script type="text/javascript">
    
@@ -278,73 +339,112 @@
    var labels;
    var values;
    var dict;
+   var cache = {};
    var chartStr = '';
    var files = [ ['cumula'] ];
 
+   var activePlotFeature = "price";
+   var activePlotType = "hourly";
+   var activeFilename = "/json/hourly-price-percent.json";
+
+
+   function change_feature( feature ) {
+    if (feature != activePlotFeature) {
+      activePlotFeature = feature;
+      updateDG();
+    }
+  }
+  function change_type( type ) {
+    if (type != activePlotType) {
+      activePlotType = type;
+      updateDG();
+    }
+  }
+
    function updateDG() {
      values = [];
+     activeFilename = "/json/".concat(activePlotType).concat("-").concat(activePlotFeature).concat("-percent.json");
      
-     for (var time in dict[name1]) {
-       values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
-     }
-     DG.updateOptions( {'file': values, "labels": ["timestamp", name1, name2] } );
-   } 
-
-
-   $.getJSON(  null  , function (d) {
-
-     startDate = d['startDate'];
-     endDate = d['endDate'];
-     excludedPairs = d['excludedPairs'];
-     numDays = d['numDays'];
-
-     dict = d['data'];
-
-     document.getElementById("startDate").innerHTML = startDate;
-     document.getElementById("endDate").innerHTML = endDate;
-     document.getElementById("excludedPairs").innerHTML = excludedPairs;
-     document.getElementById("numDays").innerHTML = numDays;
-
-     labels = Object.keys(dict);
-     values = Object.values(dict);
-
-
        
-       for (var label of labels) {
-         chartStr += "<option>" + label + "</option>";
-       }
-       document.getElementById("coins").innerHTML = chartStr;
+       $.getJSON( activeFilename, function (d) {
+         dict = d['data'];
+         cache[activeFilename] = d['data'];
+       });
+     
        
-       name1 = labels[Math.floor(Math.random()*labels.length)];
-       $("#coin1").value = name1;
-       name2 = labels[Math.floor(Math.random()*labels.length)];
-       $("#coin2").value = name2;
-       
-       values = [];
        
        for (var time in dict[name1]) {
-         values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
+         values.push([new Date(time), dict[name1][time], dict[name2][time]]);
        }
+       DG.updateOptions({ 'file': values, "labels": ["timestamp", name1, name2] });
+     
+   } 
 
-       
-       DG = new Dygraph(document.getElementById(chartID),
-                   values,
-                   {"labels": ["timestamp", name1, name2],
-                    "labelsSeparateLines": true,
-                    "hideOverlayOnMouseOut": false,
-                    "legend": "always"
-                   }
-       );
+   
+   $.getJSON( activeFilename , function (d) {
+      
+      startDate = d['startDate'];
+      endDate = d['endDate'];
+      excludedPairs = d['excludedPairs'];
+      numDays = d['numDays'];
+      
+      
+      dict = d['data'];
+      cache[activeFilename] = d['data'];
 
+      
+      document.getElementById("startDate").innerHTML = startDate;
+      document.getElementById("endDate").innerHTML = endDate;
+      document.getElementById("excludedPairs").innerHTML = excludedPairs;
+      document.getElementById("numDays").innerHTML = numDays;
+
+      
+      labels = Object.keys(dict);
+      values = Object.values(dict);
+      
+      for (var label of labels) {
+        chartStr += "<option>" + label + "</option>";
+      }
+      document.getElementById("coins").innerHTML = chartStr;
+      
+      
+      name1 = labels[Math.floor(Math.random()*labels.length)];
+      $("#coin1").value = name1;
+      name2 = labels[Math.floor(Math.random()*labels.length)];
+      $("#coin2").value = name2;
+
+      
+      values = [];
+      
+      for (var time in dict[name1]) {
+        values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
+      }
+
+      
+      DG = new Dygraph(document.getElementById(chartID),
+                  values,
+                  {"labels": ["timestamp", name1, name2],
+                  "labelsSeparateLines": true,
+                  "hideOverlayOnMouseOut": false,
+                  "legend": "always"
+                  }
+      );
    });
 
    </script>
 
+   
+      <details>
+        <summary> Some pairs are excluded from the graph for either having very low volume or missing data. You can see the
+          list by clicking here: &#9660; </summary>
+        <br>
+        <p style="overflow-wrap: break-word;" id="excludedPairs"> </p>
+      </details>
 
       <div class="chevrons">
     <div id="navigation">
 <a class="nav nav-prev" href="/" title=""> <i class="fa fa-chevron-left"></i><label></label></a>
-    <a class="nav nav-next" href="/graphs/cumulative-price-percents/" title="Cumulative Price Percents" style="margin-right: 0px;"><label>Cumulative Price Percents</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/graphs/correlation-price-percents-pvp/" title="Price Percent (pair vs pair)" style="margin-right: 0px;"><label>Price Percent (pair vs pair)</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

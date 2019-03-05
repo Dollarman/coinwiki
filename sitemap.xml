@@ -11,20 +11,16 @@
   </url>
   
   <url>
+    <loc>/posts/reusable-addresses/</loc>
+  </url>
+  
+  <url>
     <loc>/wiki/bitcoin/</loc>
   </url>
   
   <url>
     <loc>/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/graphs/cumulative-price-percents/</loc>
-  </url>
-  
-  <url>
-    <loc>/graphs/cumulative-volume-percents/</loc>
   </url>
   
   <url>
@@ -48,6 +44,11 @@
   </url>
   
   <url>
+    <loc>/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/graphs/correlation-price-percents-pvp/</loc>
   </url>
   
@@ -64,10 +65,6 @@
   </url>
   
   <url>
-    <loc>/graphs/prices-pvp/</loc>
-  </url>
-  
-  <url>
     <loc>/wiki/ripple/</loc>
   </url>
   
@@ -76,11 +73,19 @@
   </url>
   
   <url>
-    <loc>/graphs/volumes-percents/</loc>
+    <loc>/graphs/cumulative-price-percents/</loc>
   </url>
   
   <url>
-    <loc>/graphs/volumes-pvp/</loc>
+    <loc>/graphs/cumulative-volume-percents/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphs/correlation-volume-percent-pvp/</loc>
+  </url>
+  
+  <url>
+    <loc>/graphs/volumes-percents/</loc>
   </url>
   
   <url>

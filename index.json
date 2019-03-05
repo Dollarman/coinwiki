@@ -14,6 +14,13 @@
 	"content": " Coin Wiki Our Coin Wiki section has detailed specs on each cryptocurrency (updated daily) that allow you to compare projects with ease.\nGraphs of Recent Trends We have graphs from the past 7 days with hourly data for:\n Percent changes Cumulative change Correlations between price/volume Correlations among pairs of coins per category Soon: Frequency analysis of pump/dump graphs, and more!  This website has several goals:  To provide a source of information free of news, active development or speculation. We inform what is available and usable right now. The core of this site is to contruct a wiki based on objective data with sources and provide open source data analysis from common exchanges. Looking forward to add more exchanges for graph data, and add more coins to the mix. In the spirit of keeping the site objective, I\u0026rsquo;ll keep my own articles section away from the main navigation, but may be reached here  "
 },
 {
+	"uri": "/posts/reusable-addresses/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "#Address Re-use in different cryptocurrencies\nBitcoin originated a method of conducting transactions called Unspent Transaction Outputs or UTXO. This means whenever you want to spend funds from your Bitcoin wallet app, your app will send the remainder balance to a new public address generated for you by the wallet app. This makes UTXO-type cryptocurrencies require you to generate and physically give out a new public address every time you want to accept funds from someone.\nIn short, this is how it works: Your account has X BTC (100 BTC for this example). You want to send Y BTC (1 BTC for this example) to your friend who wants to try BTC for the first time. You open your wallet app and enter your friend\u0026rsquo;s public address, enter 1 BTC as the amount and click send. Automatically, your wallet sends 1 BTC to your friend and calculates 100 - 1 = 99 BTC, it generates a new public address for you and sends 99 (minus the transaction fees involved) to that that new generated address. Finally, your friend receives 1 BTC, and you are left with around a little below 99 BTC in the new generated account after you pay transaction fees.\nAt first glance, it looks overkill, why go through all that trouble instead of keeping the same public address. However, Bitcoin developers decided this procedure helps the network maintain some semblance of privacy by using one-time accounts for everything and design the wallet apps to work around this to keep casual everyday payments from revealing all the funds you have available and give slight obfuscation to the source of those funds. This behavior is designed into wallets but technically speaking, you could force your way around that manually as there is no restriction in the Bitcoin nor UTXO protocol to restrict the number of transactions an account can send. *\nOther cryptocurrencies such as Ethereum and Nano have reusable addresses as a core feature. With their wallets, you are free to create as many public addresses as you want, but by default, transactions will reuse the same account. This makes sharing public addresses as easy as sharing a phone number and removes the need to ask a recipient for their current address on every payment.\n*IOTA uses a Quantum-resistant type of encryption for its transactions that reveals part of the private key in each send transaction. This forces users to change public addresses on each send, or risk having your funds compromised. Similar security risks were noted in this forum\n"
+},
+{
 	"uri": "/wiki/bitcoin/",
 	"title": "Bitcoin - BTC",
 	"tags": ["BTC", "Bitcoin"],
@@ -26,20 +33,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/graphs/cumulative-price-percents/",
-	"title": "Cumulative Price Percents",
-	"tags": [],
-	"description": "",
-	"content": "The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.\n"
-},
-{
-	"uri": "/graphs/cumulative-volume-percents/",
-	"title": "Cumulative Volume Percents",
-	"tags": [],
-	"description": "",
-	"content": "The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.\n"
 },
 {
 	"uri": "/wiki/ethereum/",
@@ -77,6 +70,13 @@
 	"content": ""
 },
 {
+	"uri": "/posts/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/graphs/correlation-price-percents-pvp/",
 	"title": "Price Percent (pair vs pair)",
 	"tags": [],
@@ -105,13 +105,6 @@
 	"content": "Shows the correlation between Price and Volume (the actual values) for each pair.\n"
 },
 {
-	"uri": "/graphs/prices-pvp/",
-	"title": "Prices (pair vs pair)",
-	"tags": [],
-	"description": "",
-	"content": "Each bar represents the correlation in prices between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in price. A strong negative correlation implies as one pair is being \u0026ldquo;pumped\u0026rdquo; the other is \u0026ldquo;dumped\u0026rdquo; in price.\n"
-},
-{
 	"uri": "/wiki/ripple/",
 	"title": "Ripple - XRP",
 	"tags": [],
@@ -126,18 +119,32 @@
 	"content": "You can support development and upkeep of this site with:\nNANO: xrb_1d1rnzocwxntfebx4rjpo738ceom95gez5pa3sa3gwwqhafnrmbhryacoman\n"
 },
 {
+	"uri": "/graphs/cumulative-price-percents/",
+	"title": "Total Price Percent Change",
+	"tags": [],
+	"description": "",
+	"content": "The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.\n"
+},
+{
+	"uri": "/graphs/cumulative-volume-percents/",
+	"title": "Total Volume Percent Change",
+	"tags": [],
+	"description": "",
+	"content": "The cumulative percent change indicates how much each pair has changed since 1 hour before the start of the graph (called Day 0). Each point on the graph indicates how much total percent change an investment would have made from Day 0 to that point.\n"
+},
+{
+	"uri": "/graphs/correlation-volume-percent-pvp/",
+	"title": "Volume Percent (pair vs pair)",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/graphs/volumes-percents/",
 	"title": "Volume Percent Changes",
 	"tags": [],
 	"description": "",
 	"content": "Measures the hourly percent changes in volume for 2 given pairs.\n"
-},
-{
-	"uri": "/graphs/volumes-pvp/",
-	"title": "Volumes (pair vs pair)",
-	"tags": [],
-	"description": "",
-	"content": "Each bar represents the correlation in volume between 2 pairs. A strong positive correlation indicates that both pairs rise together and fall together in volume. A strong negative correlation implies as one pair is being \u0026ldquo;pumped\u0026rdquo; the other is \u0026ldquo;dumped\u0026rdquo; in volume.\n"
 },
 {
 	"uri": "/wiki/",

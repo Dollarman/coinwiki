@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.54.0" />
-<title>Volume Percent Changes :: Dollarman</title>
+<title>Volume Percent (pair vs pair) :: Dollarman</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/fontawesome-free-5.5.0-web/css/all.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -81,7 +81,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.css" />
 
   </head>
-  <body data-url="/graphs/volumes-percents/">
+  <body data-url="/graphs/correlation-volume-percent-pvp/">
 
      <header>
   <div class="logo">
@@ -178,14 +178,14 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/correlation-volume-percent-pvp/" class="dd-item">
+      <li data-nav-id="/graphs/correlation-volume-percent-pvp/" class="dd-item active">
         <div>
           <a href="/graphs/correlation-volume-percent-pvp/">
             Volume Percent (pair vs pair)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/graphs/volumes-percents/" class="dd-item active">
+      <li data-nav-id="/graphs/volumes-percents/" class="dd-item">
         <div>
           <a href="/graphs/volumes-percents/">
             Volume Percent Changes
@@ -281,8 +281,8 @@
       <option value="/graphs/correlation-values/" >- Price vs Volume</option>
       <option value="/graphs/cumulative-price-percents/" >- Total Price Percent Change</option>
       <option value="/graphs/cumulative-volume-percents/" >- Total Volume Percent Change</option>
-      <option value="/graphs/correlation-volume-percent-pvp/" >- Volume Percent (pair vs pair)</option>
-      <option value="/graphs/volumes-percents/"  selected>- Volume Percent Changes</option>
+      <option value="/graphs/correlation-volume-percent-pvp/"  selected>- Volume Percent (pair vs pair)</option>
+      <option value="/graphs/volumes-percents/" >- Volume Percent Changes</option>
   
     <option value="/posts/" >
    Posts</option>
@@ -298,11 +298,10 @@
 
 
 
-    <h1>Volume Percent Changes</h1>
+    <h1>Volume Percent (pair vs pair)</h1>
 
     
-    <p>Measures the hourly percent changes in volume for 2 given pairs.</p>
-
+    
 
     
     <p> Data is taken from the last <span id="numDays"></span> days starting on <span id="startDate"></span> and ending on <span id="endDate"></span>. </p>
@@ -316,15 +315,10 @@
     
     <div class="w3-container" id='chartContainer'>
           
-          <input id="coin1" placeholder="Graph1" onchange="updateCoin1(this.value)" type="text" list="coins" style="left: 35%; background-color: inherit; width: 120px; display: inline-block;"/>
-          <input id="coin2" placeholder="Graph2" onchange="updateCoin2(this.value)" type="text" list="coins" style="background-color: inherit; width: 120px; display: inline-block;"/>
+            <p class='bar-text' id='chart' style="width: 50%; " >
+              Strong Positive Correlations
+            </p>
 
-          
-          <datalist id="coins">
-          </datalist>
-
-          <p class='bar-text' id='chart' style="width: 92%; height: 720px;" >
-          </p>
           
 
         </div>
@@ -360,7 +354,7 @@
           DG.updateOptions( {'file': values, "labels": ["timestamp", name1, name2] } );
         } 
 
-        $.getJSON( "/json/hourly-volume-percent.json" , function (d) {
+        $.getJSON( "/json/correlation-volume-percents-pvp.json" , function (d) {
 
           startDate = d['startDate'];
           endDate = d['endDate'];
@@ -377,34 +371,14 @@
           values = Object.values(dict);
 
           
-
+            for (var skill in dict) {
+              if (dict[skill] > 0.70) {
+                chartStr +=  '<div class="skillbar-container"> <div class="w3-container skillbar" style="margin-top:2px; width:' + dict[skill] * 100 + '%"> ' + skill + ' &nbsp;&nbsp;&nbsp;' + dict[skill].toFixed(2) + '  </div> </div>';
+              }
+            }
+            document.getElementById(chartID).innerHTML += chartStr;
           
-            
-            for (var label of labels) {
-              chartStr += "<option>" + label + "</option>";
-            }
-            document.getElementById("coins").innerHTML = chartStr;
-            
-            name1 = labels[Math.floor(Math.random()*labels.length)];
-            $("#coin1").value = name1;
-            name2 = labels[Math.floor(Math.random()*labels.length)];
-            $("#coin2").value = name2;
-            
-            values = [];
-            
-            for (var time in dict[name1]) {
-              values.push( [new Date(time), dict[name1][time], dict[name2][time]] );
-            }
 
-            
-            DG = new Dygraph(document.getElementById(chartID),
-                        values,
-                        {"labels": ["timestamp", name1, name2],
-                         "labelsSeparateLines": true,
-                         "hideOverlayOnMouseOut": false,
-                         "legend": "always"
-                        }
-            );
           
         });
 
@@ -416,8 +390,8 @@
 
       <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/graphs/correlation-volume-percent-pvp/" title="Volume Percent (pair vs pair)"> <i class="fa fa-chevron-left"></i><label>Volume Percent (pair vs pair)</label></a>
-    <a class="nav nav-next" href="/posts/" title="Posts" style="margin-right: 0px;"><label>Posts</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/graphs/cumulative-volume-percents/" title="Total Volume Percent Change"> <i class="fa fa-chevron-left"></i><label>Total Volume Percent Change</label></a>
+    <a class="nav nav-next" href="/graphs/volumes-percents/" title="Volume Percent Changes" style="margin-right: 0px;"><label>Volume Percent Changes</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -433,7 +407,7 @@
   
 
     <div class="github-link">
-      <a href="graphs/volumes-percents.md" target="blank"><i class="fa fa-btc"></i>
+      <a href="graphs/correlation-volume-percent-pvp.md" target="blank"><i class="fa fa-btc"></i>
         Donate links</a>
     </div>
   </div>
